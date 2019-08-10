@@ -6,37 +6,37 @@ WEBVTT
 <v John Sundell>Welcome to the swift community podcast. I am John Sindel. And on this episode, we're going to discuss Swift you I and share some of our first impressions of this exciting new framework and how we think it's going to impact the Swift _and Iowa's developer communities._ And to do that, I have three wonderful people joining me on this episode. First up is Kateryna Gridina . Welcome to the show, Kateryna.
 
 00:00:35.470 --> 00:00:46.350
-<v Kateryna Gridina>Hi, John. Um, hello, everyone. My name is Katerina Workings. Alana and I just started to play with you, if you're I, like, four weeks ago, but already very excited about this.
+<v Kateryna Gridina>Hi, John. Um, hello, everyone. My name is Katerina ~~Workings. Alana~~ I'm working in Zalando and I just started to play ~~with you, if you're I,~~  with SwiftUI, like, four weeks ago, but already very excited about this.
 
 00:00:46.360 --> 00:00:50.040
 <v John Sundell>Awesome. And next up, we have Paul Hudson. Welcome, Paul.
 
 00:00:50.100 --> 00:00:55.400
-<v Paul Hudson>Hey, folks. My polar run hacking with Swift and I am currently obsessed with you. Why? It's great fun.
+<v Paul Hudson>Hey, folks. _My polar run hacking with Swift_ and I am currently obsessed with ~~you.~~ SwiftUI. It's great fun.
 
 00:00:55.690 --> 00:01:00.410
 <v John Sundell>Awesome. And last but not least, we have Erica Sadun. Welcome, Erica.
 
 00:01:00.420 --> 00:01:11.730
-<v Erica Sadun>Hi. Uh, this is Erica Sadun, and I'm talking from Tessa Ll Island, where I am currently participating in Swift Island of Conference over here with these other two wonderful people.
+<v Erica Sadun>Hi. Uh, this is Erica Sadun, and I'm talking from ~~Tessa Ll Island~~ Tessel Island , where I am currently participating in Swift Island of Conference over here with these other two wonderful people.
 
 00:01:11.880 --> 00:01:15.200
-<v Paul Hudson>Keep telling folks here that actually she messed up the title. The Erica.
+<v Paul Hudson>I keep telling folks here that actually she messed up the title. The Erica Sadun.
 
 00:01:16.160 --> 00:01:43.170
-<v John Sundell>That's amazing. So I am Johnson. L. I am the creator of Swift Bison Dele and just a swift developer in general. I love coding and swift writing about swift podcasting about Swift and everything in between. So about one month has now passed since Swifty I was first introduced at WWDC 2019. So to get us started, I'd love to hear some of your first impressions when you first saw or heard about the announcement of Swifty. Why?
+<v John Sundell>That's amazing. So I am John Sundell. I am the creator of Swift by Sundell and just a swift developer in general. I love coding and swift writing about swift podcasting about Swift and everything in between. So about one month has now passed since SwiftUI was first introduced at WWDC 2019. So to get us started, I'd love to hear some of your first impressions when you first saw or heard about the announcement of SwiftUI 
 
 00:01:43.360 --> 00:01:53.620
 <v Erica Sadun>I think that it explained a lot about the mad rush of proposals that went through swift evolution in the past few months.
 
 00:01:53.720 --> 00:02:06.660
-<v John Sundell>Yeah, there's been a lot of changes to the language to support the declarative a p I, and with all the function builders and everything that's been added to Swift in order to accommodate the AP, Iove Swifty y
+<v John Sundell>Yeah, there's been a lot of changes to the language to support the declarative API, and with all the function builders and everything that's been added to Swift in order to accommodate the API of SwiftUI
 
 00:02:06.795 --> 00:02:15.065
-<v Paul Hudson>Well, it's more like way watching it developed for a while. And you see these things coming in on give examples and rationales of how it could be used and well,
+<v Paul Hudson>Well, it's more like we watching it developed for a while. _And you see these things coming in on give examples and rationales of how it could be used and well,_
 
 00:02:15.255 --> 00:02:15.635
-<v Kateryna Gridina>I can
+<v Paul Hudson>I can
 
 00:02:15.635 --> 00:02:22.265
 <v Paul Hudson>sort of see that. But I'm not really seeing the bigger picture here, and they were obviously working towards something where's weren't quite sure what or when.
@@ -45,22 +45,24 @@ WEBVTT
 <v Erica Sadun>And of course, you know these are pretty exciting features everything from inferred returns to opaque return types and so forth. These are wonderful things
 
 00:02:33.995 --> 00:02:45.845
-<v Erica Sadun>and seeing them all to come together and be realized in swift you. I has been one of the great pleasures of finally seeing the mystery unravel. Yeah,
-
+<v Erica Sadun>and seeing them all to come together and be realized in SwiftUI. I has been one of the great pleasures of finally seeing the mystery unravel. 
+  
 00:02:45.855 --> 00:02:51.115
-<v Kateryna Gridina>and I think it's very excited also for old school people who really
+<v Kateryna Gridina>Yeah, and I think it's very excited also for old school people who really
 
 00:02:51.625 --> 00:03:07.435
-<v Kateryna Gridina>become like board about the language. They wanted something you they wanted something exciting. And this was kind of a fresh air for everyone. And it was like something really new. You can learn basically new language within the same infrastructure
+<v Kateryna Gridina>become like bored about the language. They wanted something you they wanted something exciting. And this was kind of a fresh air for everyone. And it was like something really new. You can learn basically new language within the same infrastructure
 
 00:03:07.935 --> 00:03:28.955
-<v Paul Hudson>is willing you, right? Everyone saying that Wow, this is completely unlike everyone seems home. But I think folks who found it a little bit hard to see something that the devil is that. Don't you see whether? Okay, here's some code. It's all news with your wife. Stuff on also what the dollar signs, what does at signs. We've got new language changes, plus whole new. I think at the same time is a lotto mentally. Get over. I think
+<v Paul Hudson>_is willing you, right?_ Everyone saying that Wow, this is completely unlike everyone _seems home_. But I think folks who found it a little bit hard to see _something that the devil is that. Don't you see whether? _Okay, here's some code. It's all new SwiftUI Stuff on also what the dollar signs, what does @ signs. We've got new language changes, plus whole new. I think at the same time is _a lot mentally. Get over_. I think
 
 00:03:29.395 --> 00:03:47.065
 <v Erica Sadun>also, it's very early technology, and anybody who's actually tried to put, you know, get hands on with this has really faced either the burden of being very self reliant or might be dissuaded by the fact that there are so many cryptic fortune Cookie Titan.
 
 00:03:49.995 --> 00:04:37.313
-<v John Sundell>Yeah, the errors is definitely an issue that will need to be solved at one point or another. And, you know, when you start working with Swift, you, I and you follow some of the tutorials or you do some of the kind of hello world style implementations. It's works great, and the code itself that you produce, even if it's quite sophisticated, looks really, really elegant and nice. But then, if you make a little mistake, for example, you used the wrong type somewhere or you forget like an argument, you can get these really obscure errors because it becomes quite obvious very quickly that swift you. I makes use of some of the very most advanced generics features of Swift and sometimes the type system and the diagnostics and the errors haven't really caught up with what Swifty I want studio,
+<v John Sundell>Yeah, the errors is definitely an issue that will need to be solved at one point or another. And, you know, when you start working with SwiftUI and you follow some of the tutorials or you do some of the kind of hello world style implementations. It's works great, and the code itself that you produce, even if it's quite sophisticated, looks really, really elegant and nice. But then, if you make a little mistake, for example, you used the wrong type somewhere or you forget like an argument, you can get these really obscure errors because it becomes quite obvious very quickly that swiftUI makes use of some of the very most advanced generics features of Swift and sometimes the type system and the diagnostics and the errors haven't really caught up with what SwiftUI wants to do,
+
+// MARK: Stop here.
 
 00:04:37.493 --> 00:05:21.693
 <v Erica Sadun>but it's not just catching up in that way. On Tuesday night, Paul and I were sitting, going over text fields, discovering that half of them had been deprecate ID with the Beta three release and the language is evolving so quickly. It's almost a microcosm of what we were seeing when Swift itself was first introduced. That it is on Lee through getting people in a wide environment to really try it. That is finally getting field tested. And you're seeing that with a lot of the redesigns, the deprecation tze the missing pieces. This is very early tak
