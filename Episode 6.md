@@ -62,43 +62,43 @@ WEBVTT
 00:03:49.995 --> 00:04:37.313
 <v John Sundell>Yeah, the errors is definitely an issue that will need to be solved at one point or another. And, you know, when you start working with SwiftUI and you follow some of the tutorials or you do some of the kind of hello world style implementations. It's works great, and the code itself that you produce, even if it's quite sophisticated, looks really, really elegant and nice. But then, if you make a little mistake, for example, you used the wrong type somewhere or you forget like an argument, you can get these really obscure errors because it becomes quite obvious very quickly that swiftUI makes use of some of the very most advanced generics features of Swift and sometimes the type system and the diagnostics and the errors haven't really caught up with what SwiftUI wants to do,
 
-// MARK: Stop here.
+
 
 00:04:37.493 --> 00:05:21.693
-<v Erica Sadun>but it's not just catching up in that way. On Tuesday night, Paul and I were sitting, going over text fields, discovering that half of them had been deprecate ID with the Beta three release and the language is evolving so quickly. It's almost a microcosm of what we were seeing when Swift itself was first introduced. That it is on Lee through getting people in a wide environment to really try it. That is finally getting field tested. And you're seeing that with a lot of the redesigns, the deprecation tze the missing pieces. This is very early tak
+<v Erica Sadun>but it's not just catching up in that way. On Tuesday night, Paul and I were sitting, going over text fields, discovering that half of them had been deprecated with the Beta three release and the language is evolving so quickly. It's almost a microcosm of what we were seeing when Swift itself was first introduced. That it is only through getting people in a wide environment to really try it. That is finally getting field tested. And you're seeing that with a lot of the redesigns, the deprecation  the missing pieces. _This is very early tak_
 
 00:05:22.123 --> 00:06:10.293
-<v Paul Hudson>right, But you got in mind. That's you know, the paper turn types from 251 survivor I knew it's not interview yet. They are using that. They have some view for us. They're all their own internal code. You'll see angle, bracket, angle, bracket angle record. What if I contact? What if I did it? He doesn't use it yet. You get is really, really long stacks of pop fiction bracket everywhere. It could be awfully hard to read, but does the language of open so quickly? I'm trying to think of another time where I've seen a language be so heavily adapted to fit a product on. If you think there has been a production now with so many years, potentially four longer years, they're making this a swift one. It was a completely different language. Back there once were two massive breaking things with three. These poor people have been writing their coats so many times get where it is today.
+<v Paul Hudson>right, But you got in mind. That's you know, _the paper turn types from 251 survivor_ I knew it's not in SwiftUI yet. They are using that. They have some view for us. They're all their own internal code. You'll see angle, bracket, angle, bracket angle bracket. What if I contact? What if I did it? He doesn't use it yet. You get is really, really long stacks of pop fiction bracket everywhere. It could be awfully hard to read, _but does the language of open so quickly?_ I'm trying to think of another time where I've seen a language be so heavily adapted to fit a product on. If you think there has been a production now with so many years, potentially four longer years, they're making this a swift one. It was a completely different language. Back there once were two massive breaking things with three. These poor people have been writing their coats so many times get where it is today.
 
 00:06:10.583 --> 00:06:14.783
-<v Kateryna Gridina>Yeah, that's true for me was also a big struggle to deal with Evers.
+<v Kateryna Gridina>Yeah, that's true for me was also a big struggle to deal with Errors.
 
 00:06:15.663 --> 00:06:40.735
-<v Kateryna Gridina>Because sometimes you have ever in completely different place and because of this nasty views and messed it stacks and sometimes there ever even with the data that you pass. But compiler don't tell you anything about it. So you need to kind of do your own way off. Knew the bagging, which was completely different, even with Swift. Because now it's kind of comment out, Jack. Something that comment out another self check something else.
+<v Kateryna Gridina>Because sometimes you have error in completely different place and because of this nasty views and messed it stacks and sometimes there error even with the data that you pass. But compiler don't tell you anything about it. So you need to kind of do your own way off. _Knew the bagging_, which was completely different, even with Swift. Because now it's kind of comment out, check something. Something that comment out another self check something else.
 
 00:06:40.745 --> 00:06:43.315
-<v Paul Hudson>A way, not
+<v Paul Hudson>_A way, not_
 
 00:06:43.315 --> 00:06:50.115
-<v Kateryna Gridina>the normal debugging which is used to be before. So it's also kind of shift off the bank. Use cases that you have.
+<v Kateryna Gridina>It's not the normal debugging which is used to be before. _So it's also kind of shift off the bank. Use cases that you have._
 
 00:06:50.125 --> 00:06:59.345
-<v Paul Hudson>So you're teaching Swifty wife today, won't you? Yeah. On dhe was a positive, good, responsible happy. Well, enjoy it while they're getting errors. Long, confusing things.
+<v Paul Hudson>So you're teaching SwiftUI today, won't you? Yeah. _On dhe was a positive, good, responsible happy. Well, enjoy it while they're getting errors. Long, confusing things._
 
 00:06:59.655 --> 00:07:36.885
-<v Kateryna Gridina>It was kind of a lot of moments like Oh, I have a mirror in completely different place and now is there or I did everything right. Just Exco doesn't respond properly or I do everything completely. Okay? But it's not showing preview, but the chosen, the in the actual simulator. So they were, like, kind of those strange hours that we have. But people actually really, really like it. And I've seen that a lot of people were, like, so much into they even didn't listen to me sometimes because they like, Okay, I just shut up. I just need to finish my be self confidence. So
+<v Kateryna Gridina>It was kind of a lot of moments like Oh, I have an error in completely different place and now is there or I did everything right. _Just Exco doesn't respond properly or I do everything completely._ Okay? But it's not showing preview, but the chosen, the in the actual simulator. So they were, like, kind of those strange hours that we have. But people actually really, really like it. And I've seen that a lot of people were, like, so much into they even didn't listen to me sometimes because they like, Okay, I just shut up. I just need to finish my be self confidence. So
 
 00:07:37.495 --> 00:08:17.955
-<v John Sundell>yeah, it is really exciting. And I want to go back to something that you said there are a couple of minutes ago, Catarina, where you said that it's kind of breathing a little bit of fresh air into you I developments for apples, platforms because I also felt the same way as you described that, you know, you buy development was getting Maybe not boring is too strong of a word, but it was getting a bit repetitive. I felt like I was always making table views and collection views for over and over and over again. And what's with you? I now it's like something brand new that you can dive into and learn. And for me it has really re ignited my passion for building you wise and animations and things like that, which I'm really excited about that aspect.
+<v John Sundell>yeah, it is really exciting. And I want to go back to something that you said there are a couple of minutes ago, Kateryna, where you said that it's kind of breathing a little bit of fresh air into UI developments for apples, platforms because I also felt the same way as you described that, you know, UI development was getting Maybe not boring is too strong of a word, but it was getting a bit repetitive. I felt like I was always making table views and collection views for over and over and over again. And with SwiftUI now it's like something brand new that you can dive into and learn. And for me it has really _re ignited_ my passion for building UI and animations and things like that, which I'm really excited about that aspect.
 
 00:08:17.965 --> 00:08:33.095
-<v Erica Sadun>But you do need to take into account that the entry path that swift you eyes creating is very much towards the kinds of user experiences that we've seen before,
+<v Erica Sadun>But you do need to take into account that the entry path _that SwiftUI creating is very much towards_ the kinds of user experiences that we've seen before,
 
 00:08:33.631 --> 00:08:36.541
 <v Erica Sadun>including collection views in table views and,
 
 00:08:37.091 --> 00:08:47.711
-<v Erica Sadun>um, animations and so forth. They're just making it much smoother of of half and smoother for people to come in. And you this
+<v Erica Sadun>um, animations and so forth. _They're just making it much smoother of of half and smoother for people to come in. And you this_
 
 00:08:48.301 --> 00:08:53.151
 <v Erica Sadun>And it's interesting how much of what we're given
@@ -106,6 +106,7 @@ WEBVTT
 00:08:53.701 --> 00:09:00.861
 <v Erica Sadun>is giving us the tools to make exactly the kinds of products that predominate on the Apple store.
 
+// MARK: Stop here
 00:09:01.151 --> 00:10:09.751
 <v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look a tte a tte said table views right. That's a lot of gaps on, but it makes me all these trivial. There's almost no co two things anymore. Same for the combined framework. Would have decoding of Jason built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, all the dub dub stage or they show tell these. Look how fast they are, It's the dailies are amazing, so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, I West been around a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in Iowa. S one has been strapped on, modified hacked around, layout guides introduced or the workout worker as it happened on now Course with your eyes. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
 
