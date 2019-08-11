@@ -108,37 +108,37 @@ WEBVTT
 
 // MARK: Stop here
 00:09:01.151 --> 00:10:09.751
-<v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look a tte a tte said table views right. That's a lot of gaps on, but it makes me all these trivial. There's almost no co two things anymore. Same for the combined framework. Would have decoding of Jason built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, all the dub dub stage or they show tell these. Look how fast they are, It's the dailies are amazing, so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, I West been around a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in Iowa. S one has been strapped on, modified hacked around, layout guides introduced or the workout worker as it happened on now Course with your eyes. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
+<v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look as, as, said table views right. That's a lot of gaps on, but it makes me all these trivial. _There's almost no co two things anymore._ Same for the combined framework. Would have decoding of Jason built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, _all the dub dub stage_ or they show tell these. Look how fast they are, _It's the dailies are amazing_, so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, _I West been around _a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in ~~Iowa. S~~ iOS one has been strapped on, modified hacked around, layout guides introduced _or the workout worker as it_ happened on now of Course SwiftUI. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
 
 00:10:10.471 --> 00:10:18.811
-<v Paul Hudson>when I arrest, you know, 17 or without with all new Yes, it's it's obviously his triangular phones. Now we'll see what you have to look around,
+<v Paul Hudson>when iOS, you know, 17 or without with all new Yes, it's it's obviously triangular phones. Now we'll see what you have to look around,
 
 00:10:19.301 --> 00:10:33.131
-<v Erica Sadun>And I also want to point out that we are moving from one declaring of system for the most part, which was auto layout to a different declarative system, which is swift You. I accept safety wise cleaner, prettier, funner
+<v Erica Sadun>And I also want to point out that we are moving from one declaring of system for the most part, which was auto layout to a different declarative system, which is SwiftUI except SwiftUI is  cleaner, prettier, funner
 
 00:10:33.871 --> 00:10:49.221
 <v Erica Sadun>and fewer people are cursing at it, although anybody who's using the Betas really is cursing at it a lot. But I think the end outcome is going to be much happier developers, especially those who are focused on the business logic.
 
 00:10:49.829 --> 00:11:12.719
-<v Kateryna Gridina>I just want to point out that batter is always pain, and we remember when the speech came with. But we also had a lot of painful moments, and it always will be the case. So I guess we just need to kind off live with this and being more flexible about this. But about 50 I what I like it removes a lot of boilerplate from creating like very trivial and very simple
+<v Kateryna Gridina>I just want to point out that batter is always pain, and we remember when the speech came with. But we also had a lot of painful moments, and it always will be the case. So I guess we just need to kind of live with this and being more flexible about this. But about SwiftUI I like it removes a lot of boilerplate from creating like very trivial and very simple
 
 00:11:13.369 --> 00:11:38.599
-<v Kateryna Gridina>controls your eye elements, and it gives us a little bit more time and space to create something more excited. Maybe some new features to be more flexible in this case, and then maybe development of one application will take 34 days, and then we can be done with this and we can add extra next to some nice fancy animation or some I don't know, something related to notifications, or we are
+<v Kateryna Gridina>controls your eye elements, and it gives us a little bit more time and space to create something more excited. Maybe some new features to be more flexible in this case, and then maybe development of one application will take 34 days, and then we can be done with this and we can add extra next to some nice fancy animation or some I don't know, something related to notifications, or VR
 
 00:11:43.689 --> 00:12:35.499
-<v John Sundell>one thing I really like about Swifty. I also is that it kind of makes it easy to do the right thing, like the right path is becoming the easiest path. I mean again, setting aside the errors and the beta issues and these things was which I'm kind of assuming will be solved eventually. But the fact now that when you write your you y you get like things like dark mode support and the things you mentioned Paul like right to left languages, accessibility, all these things that are the right things to do and makes your app richer and easier to use for more people is also now the easiest thing to do. And that's great, because Erica, you can. You compared swift. You are a little bit to auto layout and I would say with auto layout, it was very easy to not do the right thing. And it was easy to get like errors and exceptions that things like that at runtime and what's with you. I feel like it. It nudges us all developers in kind of the right direction.
+<v John Sundell>one thing I really like about SwiftUI also is that it kind of makes it easy to do the right thing, like the right path is becoming the easiest path. I mean again, setting aside the errors and the beta issues and these things was which I'm kind of assuming will be solved eventually. But the fact now that when you write your UI you get like things like dark mode support and the things you mentioned Paul like right to left languages, accessibility, all these things that are the right things to do and makes your app richer and easier to use for more people is also now the easiest thing to do. And that's great, because Erica, you can. You compared SwiftUI a little bit to auto layout and I would say with auto layout, it was very easy to not do the right thing. And it was easy to get like errors and exceptions that things like that at runtime and with SwiftUI. I feel like it. It nudges us all developers in kind of the right direction.
 
 00:12:35.619 --> 00:12:42.579
-<v Erica Sadun>Furthermore, in auto layout, we dealt with size classes which I think were completely
+<v Erica Sadun>Furthermore, in auto layout, we dealt with size classes which I think were completely 
 
 00:12:43.109 --> 00:13:03.858
 <v Erica Sadun>insufficient for describing the domain of user interface specifications. But now that removing into environments. I think that we're going in the right direction for bringing in things we already mentioned dark mood and so forth. But environments can describe a lot more than that.
 
 00:13:04.228 --> 00:13:06.958
-<v Paul Hudson>Yeah, I think I made a silly talked about
+<v Paul Hudson>_Yeah, I think I made so many talked about_
 
 00:13:07.488 --> 00:13:18.708
-<v Paul Hudson>his mercy and getting it right on. They always say, Please, please, please, come on. Just at the very least used dynamic type. Name goes, Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked. In
+<v Paul Hudson>his mercy and getting it right . They always say, Please, please, please, come on. Just at the very least used dynamic type. Name goes, Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked  In
 
 00:13:19.238 --> 00:13:30.358
 <v Paul Hudson>fact, you could choose not to have that you really want to, but by default, the font size there are a lot of the type sizes. So, I believe, eliminate a wide class of problems. Maps kind of overnight.
@@ -147,13 +147,13 @@ WEBVTT
 <v Erica Sadun>And you get those automatically when you do auto complete because the names are right there. It is expected that when you set the font, that is the vocabulary, the language you're going to use to describe your text.
 
 00:13:44.918 --> 00:13:46.458
-<v Paul Hudson>Yeah, well, it works both ways. I
+<v Paul Hudson>_Yeah, well, it works both ways_. I
 
 00:13:46.848 --> 00:14:17.408
 <v Kateryna Gridina>also think that possibility is a big topic for a lot of different companies because people don't want to invest so much time, and sometimes they just forget about it, and maybe it was not so important topic for some companies, you know, like look, say the truth. Sometimes it's not just that important. And now when you can do this just out of the box without putting too much effort and it just basically it works. It's amazing. And I think a lot of people will be very grateful that you have this functionality.
 
 00:14:18.108 --> 00:14:36.458
-<v Paul Hudson>So Erica can ask you a question because, you know, you have, you know, that brag a tall well, like a person. But you've been fairly central to the way swift evolution has come along. You had Maur approved a proposal than anybody else. Really? Anyone apple or rejected? I realized that as well. I
+<v Paul Hudson>So Erica can ask you a question because, you know, you have, you know, _that brag a tall well,_ like a person. But you've been fairly central to the way swift evolution has come along. You had more approved a proposal than anybody else. _Really? Anyone apple or rejected?_ I realized that as well. I
 
 00:14:36.468 --> 00:14:38.318
 <v Erica Sadun>think I hold the record for rejected.
@@ -162,10 +162,10 @@ WEBVTT
 <v Erica Sadun>I'm not sure I do. For approved,
 
 00:14:41.728 --> 00:15:07.491
-<v Paul Hudson>I've counted them. You're very far ahead. I wanna ask you is you know, we've seen you team particularly swift eval from day one to wear it today, and it was a rookie process to get in some parts on. I wonder what you're seeing. A similar year or two ahead for Swifty. Why do this if you're gonna have a great week? Gamification x 50 y three expected. Now folks will explode in 53. I
+<v Paul Hudson>I've counted them. You're very far ahead. I wanna ask you is you know, we've seen you team particularly swift evolve from day one to where it today, and it was a rookie process to get in some parts on. I wonder what you're seeing. A similar year or two ahead for SwiftUI do this SwiftUI you're gonna _have a great week? Gamification x 50 y three expected._ Now folks will explode in SwiftUI 3
 
 00:15:07.501 --> 00:15:11.751
-<v Erica Sadun>think a lot of people are saying, What took you so long?
+<v Erica Sadun>I think a lot of people are saying, What took you so long?
 
 00:15:12.731 --> 00:15:22.861
 <v Erica Sadun>Reactive programming is so fundamental to the way that people do their work outside of the apple ecosystem.
@@ -177,7 +177,7 @@ WEBVTT
 <v Paul Hudson>is that a good job?
 
 00:15:31.201 --> 00:15:43.881
-<v Erica Sadun>Good job. Here's your sticker. Yeah, exactly that. So the fact is, we're getting in late, but we're getting him with a very clear vision off where it's going to be.
+<v Erica Sadun>Good job. Here's your sticker. Yeah, exactly that. So the fact is, we're getting in late, but we're getting him with a very clear vision of where it's going to be.
 
 00:15:44.691 --> 00:15:50.891
 <v Erica Sadun>And I think that we're going to see growth. The question is how much turbulence
@@ -186,13 +186,13 @@ WEBVTT
 <v Erica Sadun>I'm going to see. Not so much the vision but the turbulence.
 
 00:15:55.051 --> 00:15:56.481
-<v Paul Hudson>Swifty y Evolution.
+<v Paul Hudson>SwiftUI Evolution.
 
 00:15:57.181 --> 00:15:57.801
 <v Paul Hudson>I call it
 
 00:15:58.391 --> 00:16:00.701
-<v Erica Sadun>well, swift, you eyes in tow. Open source.
+<v Erica Sadun>well, swiftUI isn't Open source.
 
 00:16:00.701 --> 00:16:01.801
 <v Paul Hudson>No, it's no, no, no
@@ -200,8 +200,10 @@ WEBVTT
 00:16:02.051 --> 00:16:03.241
 <v Erica Sadun>and
 
+// MARK: Stop here.
+
 00:16:03.811 --> 00:16:47.431
-<v Erica Sadun>swift you. I has driven a lot of wear. Swift evolution. The or open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at Swift. You I we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
+<v Erica Sadun>swiftUI has driven a lot of where Swift evolution. The or open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at Swift. You I we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
 
 00:16:47.621 --> 00:16:49.571
 <v Paul Hudson>Right? And also that the D S L stuff,
