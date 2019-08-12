@@ -106,7 +106,7 @@ WEBVTT
 00:08:53.701 --> 00:09:00.861
 <v Erica Sadun>is giving us the tools to make exactly the kinds of products that predominate on the Apple store.
 
-// MARK: Stop here
+
 00:09:01.151 --> 00:10:09.751
 <v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look as, as, said table views right. That's a lot of gaps on, but it makes me all these trivial. _There's almost no co two things anymore._ Same for the combined framework. Would have decoding of Jason built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, _all the dub dub stage_ or they show tell these. Look how fast they are, _It's the dailies are amazing_, so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, _I West been around _a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in ~~Iowa. S~~ iOS one has been strapped on, modified hacked around, layout guides introduced _or the workout worker as it_ happened on now of Course SwiftUI. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
 
@@ -195,21 +195,21 @@ WEBVTT
 <v Erica Sadun>well, swiftUI isn't Open source.
 
 00:16:00.701 --> 00:16:01.801
-<v Paul Hudson>No, it's no, no, no
+<v Paul Hudson>No, it's not , no, no
 
 00:16:02.051 --> 00:16:03.241
-<v Erica Sadun>and
+<v Erica Sadun> And
 
-// MARK: Stop here.
+
 
 00:16:03.811 --> 00:16:47.431
-<v Erica Sadun>swiftUI has driven a lot of where Swift evolution. The or open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at Swift. You I we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
+<v Erica Sadun> swiftUI has driven a lot of _where Swift evolution. The or_ open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at SwiftUI we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
 
 00:16:47.621 --> 00:16:49.571
 <v Paul Hudson>Right? And also that the D S L stuff,
 
 00:16:50.111 --> 00:17:08.080
-<v Paul Hudson>which is a large part of the way through Dubai looks and works, landed on dubbed up D C. Monday along with so few eye on that that that that has a strange way to reveal a feature I always have had lately. We're running. It was real photo finishes here, I gather, but that must have set some folks backs up. Presumably
+<v Paul Hudson>which is a large part of the way SwiftUI looks and works, landed on WWDC Monday along with SwiftUI on that that that that _has a strange way to reveal a feature I always have had lately. We're running. It was real photo finishes here, I gather, but that must have set some folks backs up. Presumably_
 
 00:17:08.410 --> 00:17:15.150
 <v Erica Sadun>we'll tell. Tell me more about what this proposal was because I don't know if everybody listening will have heard about
@@ -218,37 +218,41 @@ WEBVTT
 <v Paul Hudson>it. Is it is. This is Actually it's a barrage probe, isn't it? Because, you know, I think almost
 
 00:17:19.500 --> 00:17:21.380
-<v Kateryna Gridina>everything in 51 not
+<v Paul Hudson>everything in 51 not
 
 00:17:21.380 --> 00:17:31.120
-<v Paul Hudson>everything but almost everything in 51 somehow linked back this with you, I where, and it's hard to imagine what's 50 will look like without,
+<v Paul Hudson>everything but almost everything in 51 somehow linked back SwiftUI where, and it's hard to imagine what SwiftUI will look like without,
 
 00:17:31.910 --> 00:17:44.620
-<v Paul Hudson>you know, see this mission return return without some view without the SL without function, build without without without without without what would it look like? I literally can't even imagine it. My brain was so different, a different us that I'd be much more cluttered for a start.
+<v Paul Hudson>you know, see this mission return return without some view without the DSL without function build without without without without without what would it look like? I literally can't even imagine it. My brain was so different, a different UI that I'd be much more cluttered for a start.
 
 00:17:44.680 --> 00:17:46.850
-<v Erica Sadun>It's incestuous. Is it?
+<v Erica Sadun>It's incestuous. 
+
+<v Paul Hudson>Is it?
 
 00:17:47.640 --> 00:17:52.670
 <v Erica Sadun>Well, I'm saying in that they seems the two technologies seem
 
 00:17:53.210 --> 00:17:57.080
-<v Erica Sadun>so intertwined with each other. Would you agree? Yeah.
+<v Erica Sadun>so intertwined with each other. Would you agree? 
+
+Yeah.
 
 00:17:57.280 --> 00:18:31.970
-<v John Sundell>And what do you think that this would look like going forward? Because presumably this is not the initial and last version of Swift you wise a p I or the type of language features that it will require to evolve. So how do you feel like now this with your is out in the open that this will will work going forward with swift evolution. Do you feel like there will be more transparency or do you still feel like they will be very locked in between? And we will. We will see more of this kind of features that have already been implemented in Swifty y and then after the fact being proposed on swift evolution.
+<v John Sundell>And what do you think that this would look like going forward? Because presumably this is not the initial and last version of SwiftUI API or the type of language features that it will require to evolve. So how do you feel like now this with your is out in the open that this will will work going forward with swift evolution. Do you feel like there will be more transparency or do you still feel like they will be very locked in between? And we will. We will see more of this kind of features that have already been implemented in SwiftUI and then after the fact being proposed on swift evolution.
 
 00:18:32.240 --> 00:18:48.650
-<v Kateryna Gridina>I think because off certain complexity off this 50 year that we have now on because it's just a new language on Guess there was a certain risk on doing an open source. So people just come there and start to change too many things and it will
+<v Kateryna Gridina>I think because of certain complexity of the SwiftUI that we have now on because it's just a new language. I  guess there was a certain risk on doing it open source. So people just come there and start to change too many things and it will
 
 00:18:49.770 --> 00:19:10.920
 <v Kateryna Gridina>be evolving too fast because it's already evolving too fast and it will be so complicated to catch up with it. So I guess it just kind of a trial for people to just check it out. And then maybe it will be open source. I hope it will be open source when it's a bit more stable. So changes and it will not be so crucial when they come from outside.
 
 00:19:11.492 --> 00:19:17.622
-<v Paul Hudson>I think you're right there. Assumes you involved community. You're gonna get beautifui back. That's kind of we want really on dde
+<v Paul Hudson>I think you're right there. Assumes you involved community. You're gonna get community feedback. That's kind of we want really and
 
 00:19:18.192 --> 00:19:52.112
-<v Paul Hudson>retroactively. You can look at this some of the abolition proposals like ESI 2 50 kind of a swift style guide, please. Why do you want that straight? Guys do that on now. We can see the generating swift code from you. Why? And but as the question what kind of swift code we generate on that comes the style guy thing. Of course, that got very heavily discussed in air quotes. I go fucking because he felt that that's always be controversially, we can agree on Taliban space has been my No. The other thing to do is 50 whilst in general, so it's difficult because they revolted, wantto have their
+<v Paul Hudson>retroactively. You can look at this some of the abolition proposals like SE 2 50 kind of a swift style guide, please. _Why do you want that straight? Guys do that on now._ We can see the generating swift code from UI And but as the question what kind of swift code we generate on that comes the style guide thing. Of course, that got very heavily discussed in air quotes. _I go fucking because he felt that that's always be controversially_, we can agree on _Taliban space has been my No._ _The other thing to do is SwiftUI in general,_ so it's difficult because they revolted, want to have their
 
 00:19:52.112 --> 00:19:55.162
 <v Erica Sadun>views. But you also have to think about the tooling
@@ -257,20 +261,22 @@ WEBVTT
 <v Erica Sadun>in particular. I think that we really need to think about the fact that we're going with a functional, fluent approach and we have to deal with things like debugging.
 
 00:20:07.972 --> 00:20:11.012
-<v Erica Sadun>So how do you think ex codes going to respond?
+<v Erica Sadun>So how do you think Xcode going to respond?
 
 00:20:11.302 --> 00:20:14.032
 <v Paul Hudson>I think you'll have a really great response about four years time.
 
 00:20:17.452 --> 00:20:21.512
-<v Paul Hudson>Well, you don't mind. You know the Apple weapon, Silas.
+<v Paul Hudson>Well, you don't mind. You know the Apple works silently.
 
 00:20:22.092 --> 00:20:54.892
-<v Paul Hudson>They work in very, very heavily divided silos where most folks don't know other folks working on on. So I expect something saying, You know, I look in there on that kid. I hadn't heard of Swifty Y, which had an M K Matt View wrapper for Swift. You eye on enforcement. Until that situation, no one does stop making those rappers saying is true for a chunk of the X 30 mikes, but also quite involved. They had to have the preview and stuff, but no, everyone knows and now everyone knows hopefully an outside line around visions and plans for next year or the year after. We'll see where it goes.
+<v Paul Hudson>They work in very, very heavily divided silently where most folks don't know other folks working on on. So I expect something saying, You know, _I look in there on that kid._ I hadn't heard of SwiftUI, which _had an M K Matt View wrapper for SwiftUI on enforcement. Until that situation, no one does stop making those rappers_ _saying is true for a chunk of the X 30 mikes, but also quite involved. _They had to have the preview and stuff, but no, everyone knows and now everyone knows hopefully an outside line around visions and plans for next year or the year after. We'll see where it goes.
 
 00:20:55.022 --> 00:21:33.203
-<v John Sundell>So we talk now about some of the things that were excited about some of the initial problems with Swift you in its current states, like the pros and cons and things like that. And I think it's fair to say, like, this is very early technology. I think that's something we can all agree on whether or not you're excited about it or you're skeptical, it's It's early days and it still hasn't been fully formed yet. So one question that I know a lot of people in the community are asking themselves and each other is when is it a good time to start adopting this like, should you be an early adopter and dive right in? Should you maybe wait a little bit and see how this all plays out? What are your thoughts about when and how to adopt swift You? I
+<v John Sundell>So we talk now about some of the things that were excited about some of the initial problems with SwiftUI current states, like the pros and cons and things like that. And I think it's fair to say, like, this is very early technology. I think that's something we can all agree on whether or not you're excited about it or you're skeptical, it's It's early days and it still hasn't been fully formed yet. So one question that I know a lot of people in the community are asking themselves and each other is when is it a good time to start adopting this like, should you be an early adopter and dive right in? Should you maybe wait a little bit and see how this all plays out? What are your thoughts about when and how to adopt SwiftUI
 
+
+// MARK: Stop here
 00:21:33.343 --> 00:21:48.663
 <v Kateryna Gridina>I I think it really depends on the product that you have. I guess if you have quite new product, which you don't have too many too many users in it, or maybe just experimental product where there is no high risks
 
