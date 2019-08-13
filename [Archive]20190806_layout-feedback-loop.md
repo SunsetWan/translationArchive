@@ -41,11 +41,11 @@ Apple 提供了很多方法来解决这类问题：
 
 幸运的是，在 WWDC 16 中 Apple 花了整整 15 分钟来介绍布局反馈循环调试器。这个调试器有助于识别在调试过程中发生循环的时间点。这就是一个符号断点，它的工作方式非常简单：它会计算在单个运行循环迭代中调用每个视图上的 `layoutSubviews()` 方法的次数。一旦这个计数值超过某个临界值（比如，100），这个应用程序将会停在这个断点并打印出日志，来帮助你找到根本原因。[这篇文章](https://www.hackingwithswift.com/articles/59/debugging-auto-layout-feedback-loops) 快速地介绍如何使用这个调试器。
 
-// MARK: Stop here.
 
-如果你可以重现这个问题，这个方法非常有效。但是如果你有几十个屏幕，几百个视图，但应用商店中你的应用程序的评价仅仅是：“这个应用程序糟透了，总是崩溃，再也不用了！”。你希望你可以将所有这些人带到你的办公室并为他们设置布局反馈循环调试器。虽然由于通用数据保护条例（GDPR）第一部分无法完全实现，你可以尝试把`UIViewLayoutFeedbackLoopDebuggingThreshold`的代码复制到生产代码中。
 
-让我们回顾一下符号断点是如何工作的：它会计算 `layoutSubviews()` 的调用次数并且在单个运行循环迭代中超过某个临界值时发送一个事件。听起来很简单，对吧？
+~~如果你可以重现这个问题，这个方法非常有效。~~这个方法在你可以重现问题的情况下十分有效。但是如果你有几十个屏幕，几百个视图，但应用商店中你的应用程序的评价仅仅是：“这个应用程序糟透了，总是崩溃，再也不用了！”。你希望可以将这些人带到办公室并为他们设置布局反馈循环调试器。虽然因为通用数据保护条例（GDPR），这部分无法完全实现，但是你可以尝试把`UIViewLayoutFeedbackLoopDebuggingThreshold`的代码复制到生产代码中。
+
+让我们回顾一下符号断点是如何工作的：它会计算 `layoutSubviews()` 的调用次数并在单个运行循环迭代中超过某个临界值时发送一个事件。听起来很简单，对吧？
 
 ```
 class TrackableView: UIView {
@@ -62,13 +62,13 @@ class TrackableView: UIView {
 }
 ```
 
-这段代码非常适用于你的视图。但是现在你想要在另一个视图上实现它。当然，你可以创建一个 `UIView` 的子类，在这里实现它并且使你项目中的所有视图都继承这个子类。然后为UITableView，UIScrollView，UIStackView等做同样的事情。
+~~这段代码适用于视图~~对于一个视图，这段代码运行正常。但是现在你想要在另一个视图上实现它。当然，你可以创建一个 `UIView` 的子类，在这里实现它并使你项目中的所有视图都继承这个子类。然后为UITableView，UIScrollView，UIStackView等做同样的事情。
 
-你希望你可以将此逻辑注入你想要的任何类，而无需编写大量重复的代码。 这正是运行时编程允许你执行的操作。
+你希望可以将此逻辑注入你想要的任何类，而无需编写大量重复的代码。这正是运行时编程允许你执行的操作。
 
-我们将会做同样的事情：创建一个子类，重写 `layoutSubviews()` 方法并计算其调用次数。唯一的区别是所有这些都将在运行时完成，而不是在项目中创建重复的类。
+我们会做同样的事情：创建一个子类，重写 `layoutSubviews()` 方法并计算其调用次数。唯一的区别是所有这些都将在运行时完成，而不是在项目中创建重复的类。
 
-让我们从简单地开始：我们将创建自定义子类，并将原始视图的类更改为新的子类：
+让我们开始吧：我们将创建自定义子类，并将原始视图的类更改为新的子类：
 
 ```
 struct LayoutLoopHunter {
@@ -78,7 +78,7 @@ struct LayoutLoopHunter {
     }
  
     static func setUp(for view: UIView, threshold: Int = 100, onLoop: @escaping () -> ()) {
-        // 我们根据我们功能的前缀和原始类名为我们的新类创建名称。
+        // 我们根据功能的前缀和原始类名为我们的新类创建名称。
         let classFullName = “\(RuntimeConstants.Prefix)_\(String(describing: view.self))”
         let originalClass = type(of: view)
  
@@ -97,15 +97,15 @@ struct LayoutLoopHunter {
 ```
 
 `objc_allocateClassPair()` 方法的文档告诉我们这个方法何时失败：
-> 新类，如果无法创建类，则为 Nil （例如，所需名称已在使用中）。
+> 新类，或者如果无法创建类，则为 Nil （例如，所需名称已在使用中）。
 
-这就意味着你不能拥有两个同名的类。我们的策略是为单个视图类创建一个单独的运行时类。这就是我们通过在原始类名前加上前缀来形成新类的名称的原因。
+这就意味着不能拥有两个同名的类。我们的策略是为单个视图类创建一个单独的运行时类。这就是我们在原始类名前加上前缀来形成新类的名称的原因。
 
-现在添加一个计数器到我们的子类中。理论上，你有两种方法可以做到这一点。
+现在添加一个计数器到子类中。理论上，有两种方法可以做到这一点。
 1. 添加一个保存计数器的属性。
-2. 为这个类创建一个相关联的对象。
+2. 为这个类创建一个关联对象（Associated object）。
 
-但是目前，只有一个方法奏效。你可以把一个属性当成存储在已经为你的类分配的内存中的内容，然而一个相关联的对象将被储存在一个完全不同的地方。由于被分配给一个存在的对象的内存是固定的，新添加在我们自定义类上的属性将会从其他资源里“窃取”内存。它可能导致意料之外的行为和难以调试的程序崩溃（点击 [这里](https://stackoverflow.com/questions/3346427/object-setclass-to-bigger-class) 查看更多信息）。但是在使用关联对象的情况下，它们将会被存储在运行时创建的一个哈希表里，这是完全安全的。
+但是目前，只有一个方法奏效。~~你可以把一个属性当成存储在已经为你的类分配的内存中的内容~~你可以把一个属性当成是一个存储在内存中的东西，而这段内存是分配给你的类使用的，然而一个关联对象则储存在一个完全不同的地方。因为分配给一个存在的对象的内存是固定的，所以新添加在我们自定义类上的属性将会从其他资源里“窃取”内存。它可能导致意料之外的行为和难以调试的程序崩溃（点击 [这里](https://stackoverflow.com/questions/3346427/object-setclass-to-bigger-class) 查看更多信息）。但是在使用关联对象的情况下，它们将会存储在运行时创建的一个哈希表里，这是完全安全的。
 
 
 ```
@@ -116,7 +116,7 @@ static var CounterKey = "_counter"
 objc_setAssociatedObject(trackableClass, &RuntimeConstants.CounterKey, 0, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 ```
 
-当新的子类被创建时，计数器初值设置为 0。接下来，让我们实现这个新的`layoutSubviews()` 方法，并且将它添加到我们的类中：
+当新的子类被创建时，计数器初值设置为 0。接下来，让我们实现这个新的`layoutSubviews()` 方法，并将它添加到我们的类中：
 
 ```
 let layoutSubviews: @convention(block) (Any?) -> () = { nullableSelf in
@@ -146,15 +146,15 @@ struct objc_method {
 ```
 
 尽管我们再也不会在 Swift 中直接使用这个结构体，它也很清楚地解释了一个方法实际上是由什么组成的：
-* 实现，这是调用方法时要执行的确切函数。这部分始终把接收者和消息选择器当作它的前两个参数。
+* 方法的实现，这是调用方法时要执行的确切函数。这部分始终把接收者和消息选择器当作它的前两个参数。
 * 方法类型字符串包括方法的签名。你可以在 [这里](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html) 详细了解其格式。但是在现在的情况下，需要明确说明的字符串是 `“v@:”`。作为返回类型，`v` 代表 `void`，而 `@` 和 `:` 分别代表接收者和消息选择器。
 * 选择器是在运行时期间查找方法实现的关键。
 
-你可以把 witness table（在其他编程语言中，它也被称作分发表）想象成一个简单的字典数据结构。那么选择器会成为你的键，且实现部分则为对应的值。
+你可以把 witness table（在其他编程语言中，它也被称作分发表）想象成一个简单的字典数据结构。那么选择器会成为对应的键（Key），且实现部分则为对应的值。
 在下面这行代码中
-`class_addMethod(trackableClass,#selector(originalClass.layoutSubviews), implementation, "v@:")` 我们所做的是为与 `layoutSubviews()` 方法对应的键分配新值。我们获得这个计数器，使它的计数值加一。我们会发送分析事件，其中包含类的名称和我们想要的任何数据体，以防计数值超过临界值。
+`class_addMethod(trackableClass,#selector(originalClass.layoutSubviews), implementation, "v@:")` 我们所做的是为与 `layoutSubviews()` 方法对应的键分配新值。我们获得这个计数器，使它的计数值加一。~~我们会发送分析事件，其中包含类的名称和我们想要的任何数据体，以防计数值超过临界值。~~如果计数值超过临界值，我们会发送分析事件，其中包含类名和我们想要的任何数据体。
 
-让我们回顾一下我们如何为关联对象实现和使用密钥：
+让我们回顾一下我们如何为关联对象实现和使用键：
 
 ```
 static var CounterKey = “_counter”
@@ -164,6 +164,7 @@ static var CounterKey = “_counter”
 objc_setAssociatedObject(trackableClass, &RuntimeConstants.CounterKey, counter+1, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 ```
 
+// MARK: Stop here.
 为什么我们使用 `var` 作为计数器变量的静态键属性并通过引用将它传递到任何地方？这个原因隐藏在 Swift 语言的基础内容——字符串之中。字符串像其他所有的值类型一样，是按值传递。那么，当你把它传入这个闭包时，这个字符串将会被复制到一个不同的地址，这会导致在关联对象表中产生一个完全不同的键。& 符号总是保证将相同的地址作为键参数的值。你可以尝试以下代码：
 
 ```
