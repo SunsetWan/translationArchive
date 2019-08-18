@@ -43,7 +43,7 @@ Apple 提供了很多方法来解决这类问题：
 
 
 
-这个方法在你可以重现问题的情况下十分有效。但是如果你有几十个屏幕，几百个视图，但应用商店中你的应用程序的评价仅仅是：“这个应用程序糟透了，总是崩溃，再也不用了！”。你希望可以将这些人带到办公室并为他们设置布局反馈循环调试器。虽然因为通用数据保护条例（GDPR），这部分无法完全实现，但是你可以尝试把`UIViewLayoutFeedbackLoopDebuggingThreshold`的代码复制到生产代码中。
+这个方法在你可以重现问题的情况下十分有效。但是如果你有几十个屏幕，几百个视图，但应用商店中你的应用程序的评价仅仅是：“这个应用程序糟透了，总是崩溃，再也不用了！”。你希望可以将这些人带到办公室并为他们设置布局反馈循环调试器。虽然因为通用数据保护条例（GDPR），这部分无法完全实现，但是你可以尝试把 `UIViewLayoutFeedbackLoopDebuggingThreshold` 的代码复制到生产代码中。
 
 让我们回顾一下符号断点是如何工作的：它会计算 `layoutSubviews()` 的调用次数并在单个运行循环迭代中超过某个临界值时发送一个事件。听起来很简单，对吧？
 
@@ -151,8 +151,7 @@ struct objc_method {
 * 选择器是在运行时期间查找方法实现的关键。
 
 你可以把 witness table（在其他编程语言中，它也被称作分发表）想象成一个简单的字典数据结构。那么选择器会成为对应的键（Key），且实现部分则为对应的值。
-在下面这行代码中
-`class_addMethod(trackableClass,#selector(originalClass.layoutSubviews), implementation, "v@:")` 我们所做的是为与 `layoutSubviews()` 方法对应的键分配新值。我们获得这个计数器，使它的计数值加一。如果计数值超过临界值，我们会发送分析事件，其中包含类名和我们想要的任何数据体。
+在下面这行代码中`class_addMethod(trackableClass,#selector(originalClass.layoutSubviews), implementation, "v@:")` 我们所做的是为与 `layoutSubviews()` 方法对应的键分配新值。我们获得这个计数器，使它的计数值加一。如果计数值超过临界值，我们会发送分析事件，其中包含类名和我们想要的任何数据体。
 
 让我们回顾一下我们如何为关联对象实现和使用键：
 
@@ -203,7 +202,7 @@ let originalLayoutSubviews = unsafeBitCast(originalImpl, to: ObjCVoidVoidFn.self
 originalLayoutSubviews(view, selector)
 ```
 
-这里实际发生的是：我们自己检索所需的实现并直接从我们的代码中调用它，而不是用常见的调用一个方法的方式（即执行一个会在 witness table 中寻找对应实现的选择器）。
+这里实际发生的是：我们自己检索所需的实现并直接从我们的代码中调用它，而不是用常见的调用一个方法的方式（即执行一个会在 Witness table 中寻找对应实现的选择器）。
 
 目前为止，让我们看看实现部分：
 
