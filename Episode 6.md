@@ -3,22 +3,22 @@
 WEBVTT
 
 00:00:11.840 --> 00:00:35.230
-<v John Sundell>Welcome to the swift community podcast. I am John Sindel. And on this episode, we're going to discuss Swift you I and share some of our first impressions of this exciting new framework and how we think it's going to impact the Swift _and Iowa's developer communities._ And to do that, I have three wonderful people joining me on this episode. First up is Kateryna Gridina . Welcome to the show, Kateryna.
+<v John Sundell>Welcome to the swift community podcast. I am John Sundell. And on this episode, we're going to discuss SwiftUI and share some of our first impressions of this exciting new framework and how we think it's going to impact the Swift and iOS developer communities. And to do that, I have three wonderful people joining me on this episode. First up is Kateryna Gridina . Welcome to the show, Kateryna.
 
 00:00:35.470 --> 00:00:46.350
-<v Kateryna Gridina>Hi, John. Um, hello, everyone. My name is Katerina ~~Workings. Alana~~ I'm working in Zalando and I just started to play ~~with you, if you're I,~~  with SwiftUI, like, four weeks ago, but already very excited about this.
+<v Kateryna Gridina>Hi, John. Um, hello, everyone. My name is Katerina. I'm working in Zalando and I just started to play with SwiftUI, like, four weeks ago, but already very excited about this.
 
 00:00:46.360 --> 00:00:50.040
 <v John Sundell>Awesome. And next up, we have Paul Hudson. Welcome, Paul.
 
 00:00:50.100 --> 00:00:55.400
-<v Paul Hudson>Hey, folks. _My polar run hacking with Swift_ and I am currently obsessed with ~~you.~~ SwiftUI. It's great fun.
+<v Paul Hudson>Hey, folks. _[unclear]My polar run hacking with Swift_ and I am currently obsessed with SwiftUI. It's great fun.
 
 00:00:55.690 --> 00:01:00.410
 <v John Sundell>Awesome. And last but not least, we have Erica Sadun. Welcome, Erica.
 
 00:01:00.420 --> 00:01:11.730
-<v Erica Sadun>Hi. Uh, this is Erica Sadun, and I'm talking from ~~Tessa Ll Island~~ Tessel Island , where I am currently participating in Swift Island of Conference over here with these other two wonderful people.
+<v Erica Sadun>Hi. Uh, this is Erica Sadun, and I'm talking from Tessel Island , where I am currently participating in Swift Island of Conference over here with these other two wonderful people.
 
 00:01:11.880 --> 00:01:15.200
 <v Paul Hudson>I keep telling folks here that actually she messed up the title. The Erica Sadun.
@@ -33,7 +33,7 @@ WEBVTT
 <v John Sundell>Yeah, there's been a lot of changes to the language to support the declarative API, and with all the function builders and everything that's been added to Swift in order to accommodate the API of SwiftUI
 
 00:02:06.795 --> 00:02:15.065
-<v Paul Hudson>Well, it's more like we watching it developed for a while. _And you see these things coming in on give examples and rationales of how it could be used and well,_
+<v Paul Hudson>Well, it's more like we watching it developed for a while. And you see these things coming in and giving examples and rationales of how it could be used and well,
 
 00:02:15.255 --> 00:02:15.635
 <v Paul Hudson>I can
@@ -51,10 +51,10 @@ WEBVTT
 <v Kateryna Gridina>Yeah, and I think it's very excited also for old school people who really
 
 00:02:51.625 --> 00:03:07.435
-<v Kateryna Gridina>become like bored about the language. They wanted something you they wanted something exciting. And this was kind of a fresh air for everyone. And it was like something really new. You can learn basically new language within the same infrastructure
+<v Kateryna Gridina>become like bored about the language. They wanted something new they wanted something exciting. And this was kind of a fresh air for everyone. And it was like something really new. You can learn basically new language within the same infrastructure
 
 00:03:07.935 --> 00:03:28.955
-<v Paul Hudson>_is willing you, right?_ Everyone saying that Wow, this is completely unlike everyone _seems home_. But I think folks who found it a little bit hard to see _something that the devil is that. Don't you see whether? _Okay, here's some code. It's all new SwiftUI Stuff on also what the dollar signs, what does @ signs. We've got new language changes, plus whole new. I think at the same time is _a lot mentally. Get over_. I think
+<v Paul Hudson> _[unclear]is willing you, right?_ Everyone saying that Wow, this is completely unlike everyone seen before. But I think folks who found it a little bit hard to see _[unclear]something that the devil is that. Don't you see whether?_ Okay, here's some code. It's all new SwiftUI stuff, and also what the dollar signs, what does @ signs. We've got new language changes, plus whole new. I think at the same time is a lot mentally Get over. I think
 
 00:03:29.395 --> 00:03:47.065
 <v Erica Sadun>also, it's very early technology, and anybody who's actually tried to put, you know, get hands on with this has really faced either the burden of being very self reliant or might be dissuaded by the fact that there are so many cryptic fortune Cookie Titan.
@@ -65,40 +65,40 @@ WEBVTT
 
 
 00:04:37.493 --> 00:05:21.693
-<v Erica Sadun>but it's not just catching up in that way. On Tuesday night, Paul and I were sitting, going over text fields, discovering that half of them had been deprecated with the Beta three release and the language is evolving so quickly. It's almost a microcosm of what we were seeing when Swift itself was first introduced. That it is only through getting people in a wide environment to really try it. That is finally getting field tested. And you're seeing that with a lot of the redesigns, the deprecation  the missing pieces. _This is very early tak_
+<v Erica Sadun>but it's not just catching up in that way. On Tuesday night, Paul and I were sitting, going over text fields, discovering that half of them had been deprecated with the Beta3 release and the language is evolving so quickly. It's almost a microcosm of what we were seeing when Swift itself was first introduced. That it is only through getting people in a wide environment to really try it. That is finally getting field tested. And you're seeing that with a lot of the redesigns, the deprecation  the missing pieces. This is very early tech
 
 00:05:22.123 --> 00:06:10.293
-<v Paul Hudson>right, But you got in mind. That's you know, _the paper turn types from 251 survivor_ I knew it's not in SwiftUI yet. They are using that. They have some view for us. They're all their own internal code. You'll see angle, bracket, angle, bracket angle bracket. What if I contact? What if I did it? He doesn't use it yet. You get is really, really long stacks of pop fiction bracket everywhere. It could be awfully hard to read, _but does the language of open so quickly?_ I'm trying to think of another time where I've seen a language be so heavily adapted to fit a product on. If you think there has been a production now with so many years, potentially four longer years, they're making this a swift one. It was a completely different language. Back there once were two massive breaking things with three. These poor people have been writing their coats so many times get where it is today.
+<v Paul Hudson>right, But you got in mind. That's you know, _[unclear]the paper turn types from 251 survivor_ I knew it's not in SwiftUI yet. They are using that. They have some view for us. They're all their own internal code. You'll see angle, bracket, angle, bracket angle bracket. What if I contact? What if I did it? He doesn't use it yet. You get is really, really long stacks of pop fiction bracket everywhere. It could be awfully hard to read, _[unclear]but does the language of open so quickly?_ I'm trying to think of another time where I've seen a language be so heavily adapted to fit a product on. If you think there has been a production now with so many years, potentially four longer years, they're making this a Swift 1. It was a completely different language. Back there Swift 1, Swift 2 massive breaking things with Swift 3. These poor people have been writing their coats so many times get where it is today.
 
 00:06:10.583 --> 00:06:14.783
 <v Kateryna Gridina>Yeah, that's true for me was also a big struggle to deal with Errors.
 
 00:06:15.663 --> 00:06:40.735
-<v Kateryna Gridina>Because sometimes you have error in completely different place and because of this nasty views and messed it stacks and sometimes there error even with the data that you pass. But compiler don't tell you anything about it. So you need to kind of do your own way off. _Knew the bagging_, which was completely different, even with Swift. Because now it's kind of comment out, check something. Something that comment out another self check something else.
+<v Kateryna Gridina>Because sometimes you have error in completely different place and because of this nasty views and messed stacks and sometimes there error even with the data that you pass. But compiler don't tell you anything about it. So you need to kind of do your own way of new debugging, which was completely different, even with Swift. Because now it's kind of comment out, check something. Something that comment out another self check something else.
 
 00:06:40.745 --> 00:06:43.315
-<v Paul Hudson>_A way, not_
+<v Paul Hudson> _[unclear]A way, not_
 
 00:06:43.315 --> 00:06:50.115
-<v Kateryna Gridina>It's not the normal debugging which is used to be before. _So it's also kind of shift off the bank. Use cases that you have._
+<v Kateryna Gridina>It's not the normal debugging which is used to be before. _[unclear]So it's also kind of shift of the bank. Use cases that you have._
 
 00:06:50.125 --> 00:06:59.345
-<v Paul Hudson>So you're teaching SwiftUI today, won't you? Yeah. _On dhe was a positive, good, responsible happy. Well, enjoy it while they're getting errors. Long, confusing things._
+<v Paul Hudson>So you're teaching SwiftUI today, won't you? Yeah. _[unclear]On dhe was a positive, good, responsible happy. Well, enjoy it_ while they're getting errors. Long, confusing things.
 
 00:06:59.655 --> 00:07:36.885
-<v Kateryna Gridina>It was kind of a lot of moments like Oh, I have an error in completely different place and now is there or I did everything right. _Just Exco doesn't respond properly or I do everything completely._ Okay? But it's not showing preview, but the chosen, the in the actual simulator. So they were, like, kind of those strange hours that we have. But people actually really, really like it. And I've seen that a lot of people were, like, so much into they even didn't listen to me sometimes because they like, Okay, I just shut up. I just need to finish my be self confidence. So
+<v Kateryna Gridina>It was kind of a lot of moments like Oh, I have an error in completely different place and now is there or I did everything right. Just Xcode doesn't respond properly or I do everything completely okay, But it's not showing preview, but the chosen, the in the actual simulator. So they were, like, kind of those strange hours that we have. But people actually really, really like it. And I've seen that a lot of people were, like, so much into they even didn't listen to me sometimes because they like, Okay, I just shut up. I just need to finish my be self confidence. So
 
 00:07:37.495 --> 00:08:17.955
-<v John Sundell>yeah, it is really exciting. And I want to go back to something that you said there are a couple of minutes ago, Kateryna, where you said that it's kind of breathing a little bit of fresh air into UI developments for apples, platforms because I also felt the same way as you described that, you know, UI development was getting Maybe not boring is too strong of a word, but it was getting a bit repetitive. I felt like I was always making table views and collection views for over and over and over again. And with SwiftUI now it's like something brand new that you can dive into and learn. And for me it has really _re ignited_ my passion for building UI and animations and things like that, which I'm really excited about that aspect.
+<v John Sundell>yeah, it is really exciting. And I want to go back to something that you said there are a couple of minutes ago, Kateryna, where you said that it's kind of breathing a little bit of fresh air into UI developments for Apple's platforms because I also felt the same way as you described that, you know, UI development was getting Maybe not boring is too strong of a word, but it was getting a bit repetitive. I felt like I was always making table views and collection views for over and over and over again. And with SwiftUI now it's like something brand new that you can dive into and learn. And for me it has really reignited my passion for building UI and animations and things like that, which I'm really excited about that aspect.
 
 00:08:17.965 --> 00:08:33.095
-<v Erica Sadun>But you do need to take into account that the entry path _that SwiftUI creating is very much towards_ the kinds of user experiences that we've seen before,
+<v Erica Sadun>But you do need to take into account that the entry path that SwiftUI is creating is very much towards the kinds of user experiences that we've seen before,
 
 00:08:33.631 --> 00:08:36.541
 <v Erica Sadun>including collection views in table views and,
 
 00:08:37.091 --> 00:08:47.711
-<v Erica Sadun>um, animations and so forth. _They're just making it much smoother of of half and smoother for people to come in. And you this_
+<v Erica Sadun>um, animations and so forth. They're just making it much smoother of of the half and smoother for people to come in. And do this
 
 00:08:48.301 --> 00:08:53.151
 <v Erica Sadun>And it's interesting how much of what we're given
@@ -108,7 +108,7 @@ WEBVTT
 
 
 00:09:01.151 --> 00:10:09.751
-<v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look as, as, said table views right. That's a lot of gaps on, but it makes me all these trivial. _There's almost no co two things anymore._ Same for the combined framework. Would have decoding of Jason built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, _all the dub dub stage_ or they show tell these. Look how fast they are, _It's the dailies are amazing_, so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, _I West been around _a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in ~~Iowa. S~~ iOS one has been strapped on, modified hacked around, layout guides introduced _or the workout worker as it_ happened on now of Course SwiftUI. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
+<v Paul Hudson>That's great. So in common problems, presumably things like, you know, you look as, as, said table views right. That's a lot of apps, and it makes table view trivial. _[unclear]There's almost no co two things anymore._ Same for the combined framework. Would have decoding of json built into one of the steps. Now, if it makes things so much easier for those kinds of common tasks, I think that's why unsurprisingly, all the W W stage or they show table views. Look how fast they are, It's the table views are amazing _[unclear]so it doesn't have the out of the box. And also I quite enjoy. Is that because, of course, I West been around a long time now the idea of, you know, big title navigation bars the idea of safe areas. The idea of dark mode didn't exist in iOS 1 has been strapped on, modified hacked around, layout guides introduced or the workout worker as it_ happened on now of Course SwiftUI. Now the new foundation. That's the starting point of clean things. There's no weird workarounds required you get. Stay here is by default. You get system colors by default. You get large titles by default, which is fantastic. Of course, in four years time
 
 00:10:10.471 --> 00:10:18.811
 <v Paul Hudson>when iOS, you know, 17 or without with all new Yes, it's it's obviously triangular phones. Now we'll see what you have to look around,
@@ -123,7 +123,7 @@ WEBVTT
 <v Kateryna Gridina>I just want to point out that batter is always pain, and we remember when the speech came with. But we also had a lot of painful moments, and it always will be the case. So I guess we just need to kind of live with this and being more flexible about this. But about SwiftUI I like it removes a lot of boilerplate from creating like very trivial and very simple
 
 00:11:13.369 --> 00:11:38.599
-<v Kateryna Gridina>controls your eye elements, and it gives us a little bit more time and space to create something more excited. Maybe some new features to be more flexible in this case, and then maybe development of one application will take 34 days, and then we can be done with this and we can add extra next to some nice fancy animation or some I don't know, something related to notifications, or VR
+<v Kateryna Gridina>controls UI elements, and it gives us a little bit more time and space to create something more excited. Maybe some new features to be more flexible in this case, and then maybe development of one application will take 34 days, and then we can be done with this and we can add extra next to some nice fancy animation or some I don't know, something related to notifications, or VR
 
 00:11:43.689 --> 00:12:35.499
 <v John Sundell>one thing I really like about SwiftUI also is that it kind of makes it easy to do the right thing, like the right path is becoming the easiest path. I mean again, setting aside the errors and the beta issues and these things was which I'm kind of assuming will be solved eventually. But the fact now that when you write your UI you get like things like dark mode support and the things you mentioned Paul like right to left languages, accessibility, all these things that are the right things to do and makes your app richer and easier to use for more people is also now the easiest thing to do. And that's great, because Erica, you can. You compared SwiftUI a little bit to auto layout and I would say with auto layout, it was very easy to not do the right thing. And it was easy to get like errors and exceptions that things like that at runtime and with SwiftUI. I feel like it. It nudges us all developers in kind of the right direction.
@@ -132,13 +132,13 @@ WEBVTT
 <v Erica Sadun>Furthermore, in auto layout, we dealt with size classes which I think were completely 
 
 00:12:43.109 --> 00:13:03.858
-<v Erica Sadun>insufficient for describing the domain of user interface specifications. But now that removing into environments. I think that we're going in the right direction for bringing in things we already mentioned dark mood and so forth. But environments can describe a lot more than that.
+<v Erica Sadun>insufficient for describing the domain of user interface specifications. But now that we're removing into environments. I think that we're going in the right direction for bringing in things we already mentioned dark mood and so forth. But environments can describe a lot more than that.
 
 00:13:04.228 --> 00:13:06.958
-<v Paul Hudson>_Yeah, I think I made so many talked about_
+<v Paul Hudson>Yeah, I think I made so many talks talked about
 
 00:13:07.488 --> 00:13:18.708
-<v Paul Hudson>his mercy and getting it right . They always say, Please, please, please, come on. Just at the very least used dynamic type. Name goes, Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked  In
+<v Paul Hudson>his mercy and getting it right . They always say, Please, please, please, come on. Just at the very least used dynamic type. _[unclear]Name goes_, Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked in
 
 00:13:19.238 --> 00:13:30.358
 <v Paul Hudson>fact, you could choose not to have that you really want to, but by default, the font size there are a lot of the type sizes. So, I believe, eliminate a wide class of problems. Maps kind of overnight.
@@ -147,22 +147,22 @@ WEBVTT
 <v Erica Sadun>And you get those automatically when you do auto complete because the names are right there. It is expected that when you set the font, that is the vocabulary, the language you're going to use to describe your text.
 
 00:13:44.918 --> 00:13:46.458
-<v Paul Hudson>_Yeah, well, it works both ways_. I
+<v Paul Hudson>Yeah, well, it works great. I
 
 00:13:46.848 --> 00:14:17.408
 <v Kateryna Gridina>also think that possibility is a big topic for a lot of different companies because people don't want to invest so much time, and sometimes they just forget about it, and maybe it was not so important topic for some companies, you know, like look, say the truth. Sometimes it's not just that important. And now when you can do this just out of the box without putting too much effort and it just basically it works. It's amazing. And I think a lot of people will be very grateful that you have this functionality.
 
 00:14:18.108 --> 00:14:36.458
-<v Paul Hudson>So Erica can ask you a question because, you know, you have, you know, _that brag a tall well,_ like a person. But you've been fairly central to the way swift evolution has come along. You had more approved a proposal than anybody else. _Really? Anyone apple or rejected?_ I realized that as well. I
+<v Paul Hudson>So Erica can ask you a question because, you know, you have, you know, _[unclear]that brag a tall well,_ like a person. But you've been fairly central to the way swift evolution has come along. You had more approved a proposal than anybody else. _[unclear]Really? Anyone apple or rejected?_ I realized that as well. I
 
 00:14:36.468 --> 00:14:38.318
-<v Erica Sadun>think I hold the record for rejected.
+<v Erica Sadun>think I hold the record for rejected proposals
 
 00:14:39.668 --> 00:14:41.728
 <v Erica Sadun>I'm not sure I do. For approved,
 
 00:14:41.728 --> 00:15:07.491
-<v Paul Hudson>I've counted them. You're very far ahead. I wanna ask you is you know, we've seen you team particularly swift evolve from day one to where it today, and it was a rookie process to get in some parts on. I wonder what you're seeing. A similar year or two ahead for SwiftUI do this SwiftUI you're gonna _have a great week? Gamification x 50 y three expected._ Now folks will explode in SwiftUI 3
+<v Paul Hudson>I've counted them. You're very far ahead. I wanna ask you is you know, we've seen you team particularly swift evolve from day one to where it today, and it was a rookie process to get in some parts on. I wonder what you're seeing. A similar year or two ahead for SwiftUI do this SwiftUI you're gonna _[unclear]have a great week? Gamification x 50 y three expected._ Now folks will explode in SwiftUI 3
 
 00:15:07.501 --> 00:15:11.751
 <v Erica Sadun>I think a lot of people are saying, What took you so long?
@@ -177,7 +177,7 @@ WEBVTT
 <v Paul Hudson>is that a good job?
 
 00:15:31.201 --> 00:15:43.881
-<v Erica Sadun>Good job. Here's your sticker. Yeah, exactly that. So the fact is, we're getting in late, but we're getting him with a very clear vision of where it's going to be.
+<v Erica Sadun>Good job. Here's your sticker. Yeah, exactly that. So the fact is, we're getting in late, but we're getting in with a very clear vision of where it's going to be.
 
 00:15:44.691 --> 00:15:50.891
 <v Erica Sadun>And I think that we're going to see growth. The question is how much turbulence
@@ -186,7 +186,7 @@ WEBVTT
 <v Erica Sadun>I'm going to see. Not so much the vision but the turbulence.
 
 00:15:55.051 --> 00:15:56.481
-<v Paul Hudson>SwiftUI Evolution.
+<v Paul Hudson>woo! SwiftUI Evolution.
 
 00:15:57.181 --> 00:15:57.801
 <v Paul Hudson>I call it
@@ -203,19 +203,19 @@ WEBVTT
 
 
 00:16:03.811 --> 00:16:47.431
-<v Erica Sadun> swiftUI has driven a lot of _where Swift evolution. The or_ open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at SwiftUI we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
+<v Erica Sadun> swiftUI has driven a lot of where Swift evolution be or open source project is over the last six months, and there are some people who have gotten quite cranky about this because so much has come in terms of driving the language from inside the apple umbrella for a language that is technically open source but is the major tooling for major company and that has to be taken account when looking at SwiftUI we don't have access to it. It is under their umbrella. We do not have a direction for it. And that means that the changes can be quite profound without community input.
 
 00:16:47.621 --> 00:16:49.571
-<v Paul Hudson>Right? And also that the D S L stuff,
+<v Paul Hudson>Right? And also that the DSL stuff,
 
 00:16:50.111 --> 00:17:08.080
-<v Paul Hudson>which is a large part of the way SwiftUI looks and works, landed on WWDC Monday along with SwiftUI on that that that that _has a strange way to reveal a feature I always have had lately. We're running. It was real photo finishes here, I gather, but that must have set some folks backs up. Presumably_
+<v Paul Hudson>which is a large part of the way SwiftUI looks and works, landed on WWDC Monday along with SwiftUI on that that that that has a strange way to reveal a feature I always have had lately. We're running. It was real photo finishes here, I gather, but that must have set some folks backs up. Presumably
 
 00:17:08.410 --> 00:17:15.150
 <v Erica Sadun>we'll tell. Tell me more about what this proposal was because I don't know if everybody listening will have heard about
 
 00:17:15.160 --> 00:17:19.500
-<v Paul Hudson>it. Is it is. This is Actually it's a barrage probe, isn't it? Because, you know, I think almost
+<v Paul Hudson>it. Is it is. This is Actually _[unclear]it's a barrage probe_, isn't it? Because, you know, I think almost
 
 00:17:19.500 --> 00:17:21.380
 <v Paul Hudson>everything in 51 not
@@ -224,7 +224,7 @@ WEBVTT
 <v Paul Hudson>everything but almost everything in 51 somehow linked back SwiftUI where, and it's hard to imagine what SwiftUI will look like without,
 
 00:17:31.910 --> 00:17:44.620
-<v Paul Hudson>you know, see this mission return return without some view without the DSL without function build without without without without without what would it look like? I literally can't even imagine it. My brain was so different, a different UI that I'd be much more cluttered for a start.
+<v Paul Hudson>you know, see this mission return return without some view without the DSL without function build without without without without without what would it look like? I literally can't even imagine it. _[unclear]My brain was so different_, a different UI that I'd be much more cluttered for a start.
 
 00:17:44.680 --> 00:17:46.850
 <v Erica Sadun>It's incestuous. 
@@ -252,7 +252,7 @@ Yeah.
 <v Paul Hudson>I think you're right there. Assumes you involved community. You're gonna get community feedback. That's kind of we want really and
 
 00:19:18.192 --> 00:19:52.112
-<v Paul Hudson>retroactively. You can look at this some of the abolition proposals like SE 2 50 kind of a swift style guide, please. _Why do you want that straight? Guys do that on now._ We can see the generating swift code from UI And but as the question what kind of swift code we generate on that comes the style guide thing. Of course, that got very heavily discussed in air quotes. _I go fucking because he felt that that's always be controversially_, we can agree on _Taliban space has been my No._ _The other thing to do is SwiftUI in general,_ so it's difficult because they revolted, want to have their
+<v Paul Hudson>retroactively. You can look at this some of the abolition proposals like SE 2 50 kind of a swift style guide, please. _[unclear]Why do you want that straight? Guys do that on now._ We can see the generating swift code from UI And but as the question what kind of swift code we generate on that comes the style guide thing. Of course, that got very heavily discussed in air quotes. _[unclear]I go fucking because he felt that that's always be controversially_, we can agree on _[unclear]Taliban space has been my No._ _[unclear]The other thing to do is SwiftUI in general,_ so it's difficult because they revolted, want to have their
 
 00:19:52.112 --> 00:19:55.162
 <v Erica Sadun>views. But you also have to think about the tooling
@@ -270,7 +270,7 @@ Yeah.
 <v Paul Hudson>Well, you don't mind. You know the Apple works silently.
 
 00:20:22.092 --> 00:20:54.892
-<v Paul Hudson>They work in very, very heavily divided silently where most folks don't know other folks working on on. So I expect something saying, You know, _I look in there on that kid._ I hadn't heard of SwiftUI, which _had an M K Matt View wrapper for SwiftUI on enforcement. Until that situation, no one does stop making those rappers_ _saying is true for a chunk of the X 30 mikes, but also quite involved. _They had to have the preview and stuff, but no, everyone knows and now everyone knows hopefully an outside line around visions and plans for next year or the year after. We'll see where it goes.
+<v Paul Hudson>They work in very, very heavily divided silently where most folks don't know other folks working on on. So I expect something saying, You know, _[unclear]I look in there on that kid._ I hadn't heard of SwiftUI, which _[unclear]had an M K Matt View wrapper for SwiftUI on enforcement. Until that situation, no one does stop making those rappers_ _saying is true for a chunk of the X 30 mikes, but also quite involved. _They had to have the preview and stuff, but no, everyone knows and now everyone knows hopefully an outside line around visions and plans for next year or the year after. We'll see where it goes.
 
 00:20:55.022 --> 00:21:33.203
 <v John Sundell>So we talk now about some of the things that were excited about some of the initial problems with SwiftUI current states, like the pros and cons and things like that. And I think it's fair to say, like, this is very early technology. I think that's something we can all agree on whether or not you're excited about it or you're skeptical, it's It's early days and it still hasn't been fully formed yet. So one question that I know a lot of people in the community are asking themselves and each other is when is it a good time to start adopting this like, should you be an early adopter and dive right in? Should you maybe wait a little bit and see how this all plays out? What are your thoughts about when and how to adopt SwiftUI
@@ -284,7 +284,7 @@ Yeah.
 <v Kateryna Gridina>that something will go wrong, that I can think you can start experiment with it. But for example, in Zalando, when you have 40,000,000 users, it's very risky to introduce something like that. And it will break in a moment and you will not be able to fix it because of the review ~~protests and so on and so forth.~~ So we cannot treat the business in the same time. And one big disadvantage that I think is also stopping a lot of people to use it is that we don't have backwards compatibility to previous OS versions. And we have so many users that use iOS 11 or iOS 12. And I guess this will be the biggest issue in the future. So I expect like maybe in one year we would be able to started up some features from SwiftUI.
 
 00:22:36.073 --> 00:22:59.913
-<v Paul Hudson>_But then why did you adopt first base, an apple and standing still?_ Now there will be working extremely hard between now and GM You know the poor SwiftUI. I'm sure working every possible hour every day get stuff done. But then next year we presume you see SwiftUI collection views or SwiftUI other stuff. You know, I don't know about that, Not the way iOS 14 to get this stuff. You're always waiting for the next sort of thing. Really?
+<v Paul Hudson>_[unclear]But then why did you adopt first base, an apple and standing still?_ Now there will be working extremely hard between now and GM You know the poor SwiftUI. I'm sure working every possible hour every day get stuff done. But then next year we presume you see SwiftUI collection views or SwiftUI other stuff. You know, I don't know about that, Not the way iOS 14 to get this stuff. You're always waiting for the next sort of thing. Really?
 
 00:23:00.013 --> 00:23:50.244
 <v Kateryna Gridina>Yeah, that's true. But in the same time, like because we want to cover as many users as we can, we can not take a risk to create at least measure features. Maybe we can start to create, like, something experimental. So even if they're not, every user is moved to the newest version that we can create something like SwiftUI interface. But like crucial feature like check out, for example, it's not possible because we want everybody to use it and I guess, with them adoption of the new technology. It's always risky, always want more stability. You always want to have better interface. You always want to be sure that whatever you develop will work in an hour. And I guess not everyone willing to take this risk.
@@ -293,13 +293,13 @@ Yeah.
 <v Paul Hudson>We were all
 
 00:23:52.974 --> 00:24:09.694
-<v Paul Hudson>_so surprised. Maybe I don't want you to do this. Well, one more thing. There's always one thing._ If I didn't say on Twitter. I think Greg made a joke out of it. You know, I only wish that suits UI images could do remote images because it was so nice to have the right to know. _We just blown your mind with this new to captain for a one on one thing._
+<v Paul Hudson>_[unclear]so surprised. Maybe I don't want you to do this. Well, one more thing. There's always one thing._ If I didn't say on Twitter. I think Greg made a joke out of it. You know, I only wish that suits UI images could do remote images because it was so nice to have the right to know. _[unclear]We just blown your mind with this new to captain for a one on one thing._
 
 00:24:10.054 --> 00:24:41.464
 <v Erica Sadun>I tend to be very conservative when it comes to making recommendations for adoption of technology. And until very recently I was still saying to people to do Objective-C, because it's so stable and it's so expressive and you basically can build code and know that it's gonna keep compiling. So when it comes to SwiftUI, I'm telling most people you're looking at basically a minimum of a two year outlook that if you wanna have an experimental team, if you're a large enough
 
 00:24:42.504 --> 00:25:26.454
-<v Erica Sadun>enterprise that, yes, have an experimental team who starting to build things, starting to learn the technology, so you're going to be ready in two years. But I cannot see before two years jumping on that bandwagon unless you're a single vendor who's willing to take a lot of risk. And who, if your product tanks, well, it's something you can put on your resume. I don't think that many people are going to adopt it because it's not there yet. I wouldn't even say it's in beta yet. _I would say it's still on._ And because of that, I think a two year outlook is actually a fairly optimistic level for adoption.
+<v Erica Sadun>enterprise that, yes, have an experimental team who starting to build things, starting to learn the technology, so you're going to be ready in two years. But I cannot see before two years jumping on that bandwagon unless you're a single vendor who's willing to take a lot of risk. And who, if your product tanks, well, it's something you can put on your resume. I don't think that many people are going to adopt it because it's not there yet. I wouldn't even say it's in beta yet. _[unclear]I would say it's still on._ And because of that, I think a two year outlook is actually a fairly optimistic level for adoption.
 
 00:25:26.554 --> 00:26:30.314
 <v John Sundell>Yeah, I guess it depends on the size of the company and the product, like you also say, Erica, like what your willingness to take risks are and what the circumstances are. And ah, one thing that you all said there, which I also very much agree with that I think our focus right now when we look at SwiftUI should be learning and trying to figure out also what kind of patterns we want to use with this new framework, like how we architect our apps around it, how we make it work well with our current code base and maybe evolved our current code base so that when SwiftUI is possible to adopt in the future, it will be easier to do so that we have structured our models and our logic in our APIs to work well, this like declared of New World. I think having that approach like more that learning mindset and experimental mindset rather than you know, taking all your code that you've already written in UIKit and throwing it away and starting from scratch with SwiftUI. I think, like having that learning mindset is a little bit more healthier approach in most cases.
@@ -323,7 +323,7 @@ Yeah.
 <v Erica Sadun>that there are in the industry, if not necessarily in the Apple umbrella. Some really good experience is using it, and that we're going to see people really adopting things that our industry standard. I'm not really terribly concerned about specific patterns, more than I am about how Apple has very clearly said that it intends to provide bridges.
 
 00:28:25.250 --> 00:29:06.830
-<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3、4、5、6、 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that [Paul Hudson interrupt] _was up there_. There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between UIKit and, um, SwiftUI am back. It's well documented. It's completely broken. It's beautiful, but
+<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3、4、5、6、 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that [Paul Hudson interrupt] _[unclear]was up there_. There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between UIKit and, um, SwiftUI am back. It's well documented. It's completely broken. It's beautiful, but
 
 00:29:06.840 --> 00:29:08.190
 <v Kateryna Gridina>it's not gonna be the one
@@ -341,7 +341,7 @@ Yeah.
 <v John Sundell>All right, this has been a really interesting discussion about what do you say? Should we round off with just the some very quick final closing statements around how we feel about SwiftUI going forward. So why don't you kick us off? Paul
 
 00:29:57.270 --> 00:30:52.925
-<v Paul Hudson>I am extraordinarily exciting about SwiftUI. I think they're coming across in my writing and _wear tweet on Dhe. _The fact that I'm speaking about next week at my event, I'm loving it. They've done a wonderful job. I am really appreciative to the team with work done. And I hope that comes across my writing that I am genuinely excited about this new direction from Apple having a lot of new things to play. That's always fun. I do enjoy that feeling of being new and sparkly and fresh and exciting and discovery. It's like charting the oceans here a long time ago. But this is this is like This is round one. This is the first version of this witness's gets so much better as the teams are lying as _sweating spiritually _closer as the other frameworks weigh in with an award Web kit. Look with a really great with SwiftUI what MacKit It looked like that everything would come together. This is the very first version. I'm already very, very impressed. _I'm really reporting Lady Next cool._
+<v Paul Hudson>I am extraordinarily exciting about SwiftUI. I think they're coming across in my writing and _[unclear]wear tweet on Dhe. The fact that I'm speaking about next week at my event, I'm loving it. They've done a wonderful job. I am really appreciative to the team with work done. And I hope that comes across my writing that I am genuinely excited about this new direction from Apple having a lot of new things to play. That's always fun. I do enjoy that feeling of being new and sparkly and fresh and exciting and discovery. It's like charting the oceans here a long time ago. But this is this is like This is round one. This is the first version of this witness's gets so much better as the teams are lying as sweating spiritually _closer as the other frameworks weigh in with an award Web kit. Look with a really great with SwiftUI what MacKit It looked like that everything would come together. This is the very first version. I'm already very, very impressed.I'm really reporting Lady Next cool._
 
 00:30:52.965 --> 00:31:04.195
 <v Kateryna Gridina>I wanted to add that I'm really looking forward for more control over view, positioning about animation, that we can apply for views about
@@ -362,13 +362,13 @@ Yeah.
 <v John Sundell>I am also really, really excited about SwiftUI and like I mentioned, mostly because I feel like it has reignited my excitement and passion for building UIs And now that I'm like playing around with the API and I am, you know, the playing around with a different types that exists and how we can construct different types of UIs and animations and things like that. Like I'm having a lot of fun. So that aspect is really important to me. And then the second aspect, it's really how it's moving the swift language forward in general. And we talked about that like both from in terms of some of the challenges and opportunities that that brings. But the fact that we're now getting and more DSL capable swift and lots of new features around that is really exciting to me also for other domains, not only for swiftUI so I'm excited both about it from a point of view that I'm going to use it, but also what it means for Swift as a language going forward as well. So really good times. All right, but we've now reached the end of this episode. I hope you enjoyed our initial thoughts and discussions about SwiftUI I'm sure we're going to bring it up again on this podcast many, many times on future episodes. But for now, I want to thank my panel of guests for joining me on this episode. Paul, thanks so much for being here. If people want to find you and your work and talk to you online, where should they go?
 
 00:33:41.845 --> 00:34:28.233
-<v Paul Hudson>_Work in fire and Twitter?_ I am two straws, but honestly, I don't put anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift UI s o rather plug my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patients and swearing, I'm sure get this thing shipping   . I love my own work. _I am just so admiring of what They've pulled off and I'm just so excited about what see that come from next? Amazing. 
+<v Paul Hudson>_[unclear]Work in fire and Twitter?_ I am two straws, but honestly, I don't put anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift UI s o rather plug my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patients and swearing, I'm sure get this thing shipping   . I love my own work. _I am just so admiring of what They've pulled off and I'm just so excited about what see that come from next? Amazing. 
 _
 00:34:28.373 --> 00:34:33.123
 <v John Sundell>Awesome. And what about you, Kateryna? Where people can find you. Thanks so much for being here also.
 
 00:34:33.153 --> 00:34:39.203
-<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners _in crime_.
+<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners _[unclear]in crime_.
 
 00:34:39.913 --> 00:34:56.353
 <v Kateryna Gridina>You can find me and Twitter. Also. My name is @gridNAka. I'm not that good property this bull. I cannot find any other people too. Thanks for, but yeah, thank you. Everyone who will listen and who plan to listen this in this podcast
@@ -391,4 +391,3 @@ _
 00:35:54.653 --> 00:36:33.443
 <v John Sundell>Yeah, I would definitely. Second that as well big thanks to the swiftUI team. And to everyone at Apple really who contributed to this enormous WWDC with so many cool announcements and great new APIs and technologies that we can use to build awesome apps, so big thanks from all of us, you can find me on Twitter. I am  @John Sindel and you can find my writing, my podcast and lots of other things at swiftbysundell.com. And you can find everything about this podcast at the Swift community podcast website and as well as our GitHub repository and links. All of those things will be in the show notes. But that's it for this episode. So thanks so much for listening. Everybody
 
-mark: End
