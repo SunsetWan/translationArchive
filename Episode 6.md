@@ -390,3 +390,5 @@ _
 
 00:35:54.653 --> 00:36:33.443
 <v John Sundell>Yeah, I would definitely. Second that as well big thanks to the swiftUI team. And to everyone at Apple really who contributed to this enormous WWDC with so many cool announcements and great new APIs and technologies that we can use to build awesome apps, so big thanks from all of us, you can find me on Twitter. I am  @John Sindel and you can find my writing, my podcast and lots of other things at swiftbysundell.com. And you can find everything about this podcast at the Swift community podcast website and as well as our GitHub repository and links. All of those things will be in the show notes. But that's it for this episode. So thanks so much for listening. Everybody
+
+mark: End
