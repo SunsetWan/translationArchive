@@ -314,22 +314,22 @@ Yeah.
 <v Paul Hudson>learned on that. We did. You know, 10 years ago, when I first came out, we weren't trying exactly figuring out what it meant. And only, you know, in the last 4, 5 years have we seen these very mature patterns coming along a lot of wrong parts to get there  Oh, yeah, definitely. We're the noodling around having fun stage.
 
 00:27:11.854 --> 00:27:49.294
-<v John Sundell>Yeah, absolutely. And I think one thing that you bring up there also is that there's a tendency to bring your patterns that you already know, like the coordinator pattern or NBC, or whatever pattern that you're used to, and just blindly apply that to this new framework. Or really try to make this framework do the pattern that you are used to. And I think perhaps it's better to start with them or like blank slate in terms of your patterns and the things that you want to use and try to find things that work very well in this new world, instead of just trying to use the old patterns and just make them try to make them work, like shoehorning them into swift You I
+<v John Sundell>Yeah, absolutely. And I think one thing that you bring up there also is that there's a tendency to bring your patterns that you already know, like the coordinator pattern or MVC, or whatever pattern that you're used to, and just blindly apply that to this new framework. Or really try to make this framework do the pattern that you are used to. And I think perhaps it's better to start with them or like blank slate in terms of your patterns and the things that you want to use and try to find things that work very well in this new world, instead of just trying to use the old patterns and just make them try to make them work, like shoehorning them into SwiftUI
 
 00:27:49.514 --> 00:27:53.454
 <v Erica Sadun>I'd argue that reactive patterns have been out long enough
 
 00:27:53.964 --> 00:28:24.580
-<v Erica Sadun>that there are in the industry, if not necessarily in the Apple umbrella. Some really good experience is using it, and that we're going to see people really adopting things that our industry standard. I'm not really terribly concerned about specific patterns, Maur than I am about how Apple has very clearly said that it intends to provide bridges.
+<v Erica Sadun>that there are in the industry, if not necessarily in the Apple umbrella. Some really good experience is using it, and that we're going to see people really adopting things that our industry standard. I'm not really terribly concerned about specific patterns, more than I am about how Apple has very clearly said that it intends to provide bridges.
 
 00:28:25.250 --> 00:29:06.830
-<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3456 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that was up there. There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between you, Iike it and, um, swift you I am back. It's well documented. It's completely broken. It's beautiful, but
+<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3、4、5、6、 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that [Paul Hudson interrupt] _was up there_. There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between UIKit and, um, SwiftUI am back. It's well documented. It's completely broken. It's beautiful, but
 
 00:29:06.840 --> 00:29:08.190
 <v Kateryna Gridina>it's not gonna be the one
 
 00:29:08.190 --> 00:29:23.100
-<v Erica Sadun>will end up with. And again, doesn't matter how we get to reactive. I don't think we're going to do anything but hybrid for awhile with how much existing tech
+<v Erica Sadun>will end up with. And again, doesn't matter how we get to reactive. I don't think we're going to do anything but hybrid for a while with how much existing tech
 
 00:29:23.660 --> 00:29:39.170
 <v Erica Sadun>that we have and that existing tech is overwhelming. And unless you're willing to start brand new, then you are going to be running into this turbulence between your existing tech, your existing patterns and
@@ -338,49 +338,49 @@ Yeah.
 <v Erica Sadun>the new technology. That's what do I offers.
 
 00:29:41.740 --> 00:29:57.160
-<v John Sundell>All right, this has been a really interesting discussion about what do you say? Should we round off with just the some very quick final closing statements around how we feel about Swift. You I going forward. So why don't you kick us off? Paul
+<v John Sundell>All right, this has been a really interesting discussion about what do you say? Should we round off with just the some very quick final closing statements around how we feel about SwiftUI going forward. So why don't you kick us off? Paul
 
 00:29:57.270 --> 00:30:52.925
-<v Paul Hudson>II am extraordinarily exciting. 50 where I think they're coming across in my writing and wear tweet on Dhe. The fact that I'm speaking about next week at my event, I'm loving it. They've done a wonderful job. I am really appreciative to the team with work done on dhe. I hope that comes across my writing that I am genuinely excited about this new direction from Apple having a lot of new things to play. That's always fun. I do enjoy that feeling of being new and sparkly and fresh and exciting and discovery. It's like charting the oceans here a long time ago. But this is this is like This is round one. This is the first version of this witness's gets so much better as the teams are lying as sweating spiritually closer as the other frameworks weigh in with an award Web kit. Look with a really great with the wire Heard what Mac? It looked like that everything would come together. This is the very first version. I'm already very, very impressed. I'm really reporting Lady Next cool.
+<v Paul Hudson>I am extraordinarily exciting about SwiftUI. I think they're coming across in my writing and _wear tweet on Dhe. _The fact that I'm speaking about next week at my event, I'm loving it. They've done a wonderful job. I am really appreciative to the team with work done. And I hope that comes across my writing that I am genuinely excited about this new direction from Apple having a lot of new things to play. That's always fun. I do enjoy that feeling of being new and sparkly and fresh and exciting and discovery. It's like charting the oceans here a long time ago. But this is this is like This is round one. This is the first version of this witness's gets so much better as the teams are lying as _sweating spiritually _closer as the other frameworks weigh in with an award Web kit. Look with a really great with SwiftUI what MacKit It looked like that everything would come together. This is the very first version. I'm already very, very impressed. _I'm really reporting Lady Next cool._
 
 00:30:52.965 --> 00:31:04.195
 <v Kateryna Gridina>I wanted to add that I'm really looking forward for more control over view, positioning about animation, that we can apply for views about
 
 00:31:05.015 --> 00:31:26.135
-<v Kateryna Gridina>different properties that we can have. Andi I also wish to have a little bit better documentation because sometimes it's driving me crazy how everything described. But I also very, very, very appreciate their job. And I guess you guys did a lot off cool things there and I'm looking forward for, but they will come up with next.
+<v Kateryna Gridina>different properties that we can have. And I also wish to have a little bit better documentation because sometimes it's driving me crazy how everything described. But I also very, very, very appreciate their job. And I guess you guys did a lot of cool things there and I'm looking forward for, but they will come up with next.
 
 00:31:26.225 --> 00:31:29.905
 <v John Sundell>Awesome. And what about you, Erica? What? What? You're closing thoughts for this episode.
 
 00:31:30.105 --> 00:32:17.595
-<v Erica Sadun>I am ridiculously excited about Swift You I It is the most adorable puppy, and I want to take it home and love and snuggled and call it George. I tell you, I have generally avoided going with third party things simply because I try to keep all my writing and all my development dependency free. But if Apple had to adopt a technology and bring it under the umbrella and give it to us with their blessing, I couldn't be happier that this is the one that they chose to give to all of us. And I am so excited to see where it is going and what it's going to give us in terms of development and expressiveness.
+<v Erica Sadun>I am ridiculously excited about SwiftUI It is the most adorable puppy, and I want to take it home and love and snuggled and call it George. I tell you, I have generally avoided going with third party things simply because I try to keep all my writing and all my development dependency free. But if Apple had to adopt a technology and bring it under the umbrella and give it to us with their blessing, I couldn't be happier that this is the one that they chose to give to all of us. And I am so excited to see where it is going and what it's going to give us in terms of development and expressiveness.
 
 00:32:18.065 --> 00:32:19.705
-<v Paul Hudson>What about you, John? Well before, too.
+<v Paul Hudson>What about you, John? What you looking forward to?
 
 00:32:19.815 --> 00:33:41.665
-<v John Sundell>I am also really, really excited about Swifty y and like I mentioned, mostly because I feel like it has reignited my excitement and passion for building you eyes. And now that I'm like playing around with the A P I and I am, you know, the playing around with a different types that exists and how we can construct different types of you wise and animations and things like that. Like I'm having a lot of fun. So that aspect is really important to me. And then the second aspect, it's really how it's moving the swift language forward in general. And we talked about that like both from in terms of some of the challenges and opportunities that that brings. But the fact that we're now getting and Maur D s l capable swift and lots of new features around that is really exciting to me also for other domains, not only for swift, you I so I'm excited both about it from a point of view that I'm going to use it, but also what it means for Swift as a language going forward as well. So really good times. All right, but we've now reached the end of this episode. I hope you enjoyed our initial thoughts and discussions about Swifty. Why? I'm sure we're going to bring it up again on this podcast many, many times on future episodes. But for now, I want to thank my panel of guests for joining me on this episode. Pole, thanks so much for being here. If people want to find you and your work and talk to you online, where should they go?
+<v John Sundell>I am also really, really excited about SwiftUI and like I mentioned, mostly because I feel like it has reignited my excitement and passion for building UIs And now that I'm like playing around with the API and I am, you know, the playing around with a different types that exists and how we can construct different types of UIs and animations and things like that. Like I'm having a lot of fun. So that aspect is really important to me. And then the second aspect, it's really how it's moving the swift language forward in general. And we talked about that like both from in terms of some of the challenges and opportunities that that brings. But the fact that we're now getting and more DSL capable swift and lots of new features around that is really exciting to me also for other domains, not only for swiftUI so I'm excited both about it from a point of view that I'm going to use it, but also what it means for Swift as a language going forward as well. So really good times. All right, but we've now reached the end of this episode. I hope you enjoyed our initial thoughts and discussions about SwiftUI I'm sure we're going to bring it up again on this podcast many, many times on future episodes. But for now, I want to thank my panel of guests for joining me on this episode. Paul, thanks so much for being here. If people want to find you and your work and talk to you online, where should they go?
 
 00:33:41.845 --> 00:34:28.233
-<v Paul Hudson>Work in fire and Twitter? I am two straws, but honestly, I don't put anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift U I s a rather plenty my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patients and swearing, I'm sure get this thing shipping Onda as much. I love my own work. I am just so admiring of what? They've pulled off and I'm just so excited. What? See that come from next? Amazing.
-
+<v Paul Hudson>_Work in fire and Twitter?_ I am two straws, but honestly, I don't put anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift UI s o rather plug my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patients and swearing, I'm sure get this thing shipping   . I love my own work. _I am just so admiring of what They've pulled off and I'm just so excited about what see that come from next? Amazing. 
+_
 00:34:28.373 --> 00:34:33.123
-<v John Sundell>Awesome. And what about you, Katharina? Working people find you. Thanks so much for being here also.
+<v John Sundell>Awesome. And what about you, Kateryna? Where people can find you. Thanks so much for being here also.
 
 00:34:33.153 --> 00:34:39.203
-<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners in crime.
+<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners _in crime_.
 
 00:34:39.913 --> 00:34:56.353
-<v Kateryna Gridina>You can find me and Twitter. Also. My name is greed and a ah nde. I'm not that good property this bull. I cannot find any other people too. Thanks for, but yeah, thank you. Everyone who will listen and who plan to this in this podcast
+<v Kateryna Gridina>You can find me and Twitter. Also. My name is @gridNAka. I'm not that good property this bull. I cannot find any other people too. Thanks for, but yeah, thank you. Everyone who will listen and who plan to listen this in this podcast
 
 00:34:56.463 --> 00:35:02.083
-<v John Sundell>Excellence and Erica Sadun. Thank you so much for being here and working. People find your fine work.
+<v John Sundell>Excellence and Erica Sadun. Thank you so much for being here and where can People find your fine work?
 
 00:35:02.093 --> 00:35:05.843
-<v Paul Hudson>The studio I
+<v Paul Hudson>The Erica Sadun
 
 00:35:05.853 --> 00:35:07.463
-<v Erica Sadun>could be found on Twitter as
+<v Erica Sadun> I could be found on Twitter as
 
 00:35:07.883 --> 00:35:53.473
 <v Erica Sadun>Erica Sadun because I really have no imagination whatsoever. And I just want to say that a lot of times we complain about things like fortune cookie ever messages and so forth. But oh, it is such a privilege to be able to have access to this tech and to be part, even if it is just as an audience to this direction that the language and the technology is taken. And everybody who is developing this inside of Apple, everybody who is on the swift evolution team, we give you grief. But men, we are really, really, really grateful for everything you're doing. So thank you, guys.
@@ -389,4 +389,4 @@ Yeah.
 <v Erica Sadun>Yeah,
 
 00:35:54.653 --> 00:36:33.443
-<v John Sundell>Yeah, I would definitely. Second that a swell big thanks to the swift, you Why, team? And to everyone at Apple really who contributed to this enormous WWC with so many cool announcements and great new AP eyes and technologies that we can use to build also maps so big, thanks from all of us, you can find me on Twitter. I am at John Sindel and confined my writing, my podcast and lots of other things at Swift bison dele dot com. And you can find everything about this podcast at the Swift community podcast website and as well as our get hub depository and links. All of those things will be in the show notes. But that's it for this episode. So thanks so much for listening. Everybody
+<v John Sundell>Yeah, I would definitely. Second that as well big thanks to the swiftUI team. And to everyone at Apple really who contributed to this enormous WWDC with so many cool announcements and great new APIs and technologies that we can use to build awesome apps, so big thanks from all of us, you can find me on Twitter. I am  @John Sindel and you can find my writing, my podcast and lots of other things at swiftbysundell.com. And you can find everything about this podcast at the Swift community podcast website and as well as our GitHub repository and links. All of those things will be in the show notes. But that's it for this episode. So thanks so much for listening. Everybody
