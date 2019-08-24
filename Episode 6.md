@@ -138,7 +138,7 @@ WEBVTT
 <v Paul Hudson>Yeah, I think I made so many talks talked about
 
 00:13:07.488 --> 00:13:18.708
-<v Paul Hudson>his mercy and getting it right . They always say, Please, please, please, come on. Just at the very least used dynamic type. _[unclear]Name goes_, Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked in
+<v Paul Hudson>his mercy and getting it right . They always say, Please, please, please, come on. Just at the very least used dynamic type. _[unclear]Name goes_ , Yeah, Yeah, you do that then doesn't do it. And actually, it's kind of baked in
 
 00:13:19.238 --> 00:13:30.358
 <v Paul Hudson>fact, you could choose not to have that you really want to, but by default, the font size there are a lot of the type sizes. So, I believe, eliminate a wide class of problems. Maps kind of overnight.
@@ -215,7 +215,7 @@ WEBVTT
 <v Erica Sadun>we'll tell. Tell me more about what this proposal was because I don't know if everybody listening will have heard about
 
 00:17:15.160 --> 00:17:19.500
-<v Paul Hudson>it. Is it is. This is Actually _[unclear]it's a barrage probe_, isn't it? Because, you know, I think almost
+<v Paul Hudson>it. Is it is. This is Actually _[unclear]it's a barrage probe_ , isn't it? Because, you know, I think almost
 
 00:17:19.500 --> 00:17:21.380
 <v Paul Hudson>everything in 51 not
@@ -224,7 +224,7 @@ WEBVTT
 <v Paul Hudson>everything but almost everything in 51 somehow linked back SwiftUI where, and it's hard to imagine what SwiftUI will look like without,
 
 00:17:31.910 --> 00:17:44.620
-<v Paul Hudson>you know, see this mission return return without some view without the DSL without function build without without without without without what would it look like? I literally can't even imagine it. _[unclear]My brain was so different_, a different UI that I'd be much more cluttered for a start.
+<v Paul Hudson>you know, see this mission return return without some view without the DSL without function build without without without without without what would it look like? I literally can't even imagine it. _[unclear]My brain was so different_ , a different UI that I'd be much more cluttered for a start.
 
 00:17:44.680 --> 00:17:46.850
 <v Erica Sadun>It's incestuous. 
@@ -252,7 +252,7 @@ Yeah.
 <v Paul Hudson>I think you're right there. Assumes you involved community. You're gonna get community feedback. That's kind of we want really and
 
 00:19:18.192 --> 00:19:52.112
-<v Paul Hudson>retroactively. You can look at this some of the evolution proposals like SE-0250 kind of a swift style guide, please. _[unclear]Why do you want that straight? Guys do that on now._ We can see the generating swift code from UI And but as the question what kind of swift code we generate on that comes the style guide thing. Of course, that got very heavily discussed in air quotes. _[unclear]I go fucking because he felt that that's always be controversially_, we can agree on _[unclear]Taliban space has been my No._ _[unclear]The other thing to do is SwiftUI in general,_ so it's difficult because they revolted, want to have their
+<v Paul Hudson>retroactively. You can look at this some of the evolution proposals like SE-0250 kind of a swift style guide, please. _[unclear]Why do you want that straight? Guys do that on now._ We can see the generating swift code from UI And but as the question what kind of swift code we generate on that comes the style guide thing. Of course, that got very heavily discussed in air quotes. _[unclear]I go fucking because he felt that that's always be controversially_ , we can agree on _[unclear]Taliban space has been my No._ _[unclear]The other thing to do is SwiftUI in general,_ so it's difficult because they revolted, want to have their
 
 00:19:52.112 --> 00:19:55.162
 <v Erica Sadun>views. But you also have to think about the tooling
@@ -284,16 +284,16 @@ Yeah.
 <v Kateryna Gridina>that something will go wrong, that I can think you can start experiment with it. But for example, in Zalando, when you have 40,000,000 users, it's very risky to introduce something like that. And it will break in a moment and you will not be able to fix it because of the review _[unclear]protests_ and so on and so forth. So we cannot treat the business in the same time. And one big disadvantage that I think is also stopping a lot of people to use it is that we don't have backwards compatibility to previous OS versions. And we have so many users that use iOS 11 or iOS 12. And I guess this will be the biggest issue in the future. So I expect like maybe in one year we would be able to started up some features from SwiftUI.
 
 00:22:36.073 --> 00:22:59.913
-<v Paul Hudson>_[unclear]But then why did you adopt first base, an apple and standing still?_ Now there will be working extremely hard between now and GM(Golden Master) You know the poor SwiftUI. I'm sure working every possible hour every day get stuff done. But then next year we presume you see SwiftUI collection views or SwiftUI other stuff. You know, I don't know about that, Not the way iOS 14 to get this stuff. You're always waiting for the next sort of thing. Really?
+<v Paul Hudson> _[unclear]But then why did you adopt first base, an apple and standing still?_ Now there will be working extremely hard between now and GM(Golden Master) You know the poor SwiftUI. I'm sure working every possible hour every day get stuff done. But then next year we presume you see SwiftUI collection views or SwiftUI other stuff. You know, I don't know about that, Not the way iOS 14 to get this stuff. You're always waiting for the next sort of thing. Really?
 
 00:23:00.013 --> 00:23:50.244
 <v Kateryna Gridina>Yeah, that's true. But in the same time, like because we want to cover as many users as we can, we can not take a risk to create at least measure features. Maybe we can start to create, like, something experimental. So even if they're not, every user is moved to the newest OS version that we can create something like SwiftUI interface. But like crucial feature like check out, for example, it's not possible because we want everybody to use it and I guess, with them adoption of the new technology. It's always risky, always want more stability. You always want to have better interface. You always want to be sure that whatever you develop will work in an hour. And I guess not everyone willing to take this risk.
 
 00:23:50.534 --> 00:23:51.384
-<v Paul Hudson>_[unclear]We were all_
+<v Paul Hudson> _[unclear]We were all_
 
 00:23:52.974 --> 00:24:09.694
-<v Paul Hudson>_[unclear]so surprised. Maybe I don't want you to do this. Well, one more thing. There's always one thing._ If I didn't say on Twitter. I think Greg made a joke out of it. You know, I only wish that SwiftUI images could do remote images because it was so nice to have the right to know. _[unclear]We just blown your mind with this new to captain for a one on one thing._
+<v Paul Hudson> _[unclear]so surprised. Maybe I don't want you to do this. Well, one more thing. There's always one thing._ If I didn't say on Twitter. I think Greg made a joke out of it. You know, I only wish that SwiftUI images could do remote images because it was so nice to have the right to know. _[unclear]We just blown your mind with this new to captain for a one on one thing._
 
 00:24:10.054 --> 00:24:41.464
 <v Erica Sadun>I tend to be very conservative when it comes to making recommendations for adoption of technology. And until very recently I was still saying to people to do Objective-C, because it's so stable and it's so expressive and you basically can build code and know that it's gonna keep compiling. So when it comes to SwiftUI, I'm telling most people you're looking at basically a minimum of a two year outlook that if you wanna have an experimental team, if you're a large enough
@@ -323,7 +323,7 @@ Yeah.
 <v Erica Sadun>that there are in the industry, if not necessarily in the Apple umbrella. Some really good experience is using it, and that we're going to see people really adopting things that our industry standard. I'm not really terribly concerned about specific patterns, more than I am about how Apple has very clearly said that it intends to provide bridges.
 
 00:28:25.250 --> 00:29:06.830
-<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3、4、5、6、 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that [Paul Hudson interrupt] _[unclear]was up there_. There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between UIKit and, um, SwiftUI am back. It's well documented. It's completely broken. It's beautiful, but
+<v Erica Sadun>It has given us some bridging protocols, but I know from experience that a lot of times it takes them 3、4、5、6、 different tries until they get it right. So the current approach, which, by the way, broke in the latest beta, is not one I expect to see at the end of this year. It is that [Paul Hudson interrupt] _[unclear]was up there_ . There's a protocol and you adopt the protocol and you create an embedded coordinator and so forth. And it provides the bridge that goes between UIKit and, um, SwiftUI am back. It's well documented. It's completely broken. It's beautiful, but
 
 00:29:06.840 --> 00:29:08.190
 <v Kateryna Gridina>it's not gonna be the one
@@ -362,16 +362,16 @@ Yeah.
 <v John Sundell>I am also really, really excited about SwiftUI and like I mentioned, mostly because I feel like it has reignited my excitement and passion for building UIs And now that I'm like playing around with the API and I am, you know, the playing around with a different types that exists and how we can construct different types of UIs and animations and things like that. Like I'm having a lot of fun. So that aspect is really important to me. And then the second aspect, it's really how it's moving the swift language forward in general. And we talked about that like both from in terms of some of the challenges and opportunities that that brings. But the fact that we're now getting and more DSL capable swift and lots of new features around that is really exciting to me also for other domains, not only for swiftUI so I'm excited both about it from a point of view that I'm going to use it, but also what it means for Swift as a language going forward as well. So really good times. All right, but we've now reached the end of this episode. I hope you enjoyed our initial thoughts and discussions about SwiftUI I'm sure we're going to bring it up again on this podcast many, many times on future episodes. But for now, I want to thank my panel of guests for joining me on this episode. Paul, thanks so much for being here. If people want to find you and your work and talk to you online, where should they go?
 
 00:33:41.845 --> 00:34:28.233
-<v Paul Hudson>_[unclear]Work in fire and Twitter?_ I am two straws, but honestly, I don't wanna plug anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift UI so rather plug my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patience and swearing, I'm sure get this thing shipping as much as I love my own work. I am just so admiring of what They've pulled off and I'm just so excited about what see that come from next. _[unclear] Amazing._ 
+<v Paul Hudson> _[unclear]Work in fire and Twitter?_ I am two straws, but honestly, I don't wanna plug anything here. If I could, I want to use this time to speak specifically to a handful of people on if they listen to this very blown away. It's Jacob, Kyle, Luca, Raj, Matt, Nate, John, Dave, Kevin and Taylor, who are the handful of folks who have, I know for sure publicly were where they worked on Swift UI so rather plug my stuff. I want to plug them because these folks have worked so extraordinarily hard. You've really given up so much time effort on patience and swearing, I'm sure get this thing shipping as much as I love my own work. I am just so admiring of what They've pulled off and I'm just so excited about what see that come from next. _[unclear] Amazing._ 
 _
 00:34:28.373 --> 00:34:33.123
 <v John Sundell>Awesome. And what about you, Kateryna? Where can people find you. Thanks so much for being here also.
 
 00:34:33.153 --> 00:34:39.203
-<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners _[unclear]in crime_.
+<v Kateryna Gridina>Thank you, John, for inviting Thank you folks for being my partners _[unclear]in crime_ .
 
 00:34:39.913 --> 00:34:56.353
-<v Kateryna Gridina>You can find me in Twitter. Also. My name is @gridNAka. _[unclear]I'm not that good property this bull_. I cannot find any other people too. Thanks for, but yeah, thank you. Everyone who will listen and who plan to listen this podcast
+<v Kateryna Gridina>You can find me in Twitter. Also. My name is @gridNAka. _[unclear]I'm not that good property this bull_ . I cannot find any other people too. Thanks for, but yeah, thank you. Everyone who will listen and who plan to listen this podcast
 
 00:34:56.463 --> 00:35:02.083
 <v John Sundell>Excellence and Erica Sadun. Thank you so much for being here and where can People find your fine work?
